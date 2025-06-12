@@ -107,6 +107,7 @@ export default function About() {
                 src={item}
                 className=" object-cover object-bottom-right w-full h-full shrink-0 rounded-xl pointer-events-none lg:rounded-2xl"
                 alt="image"
+                priority
               />
             );
           })}

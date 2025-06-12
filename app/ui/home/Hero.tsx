@@ -117,6 +117,7 @@ export default function Hero() {
                 src={item.src}
                 className=" object-cover object-center h-full w-full shrink-0 rounded-lg pointer-events-none"
                 alt="image"
+                priority
               />
             );
           })}
