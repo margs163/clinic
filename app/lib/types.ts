@@ -1,6 +1,12 @@
 import { type StaticImageData } from "next/image";
 import { ReactElement } from "react";
 
+export type DirectionCardProps = {
+  icon: ReactElement;
+  title: string;
+  type: "consult" | "diagnose";
+};
+
 export type ImagePayload = {
   src: StaticImageData;
   title: string;
