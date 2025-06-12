@@ -6,9 +6,7 @@ import image4 from "@/assets/about/4.png";
 import image5 from "@/assets/about/5.png";
 import image6 from "@/assets/about/6.png";
 import image7 from "@/assets/about/7.png";
-import image8 from "@/assets/about/8.png";
 import Image, { StaticImageData } from "next/image";
-import { title } from "process";
 import { useState, useEffect } from "react";
 
 const images: StaticImageData[] = [

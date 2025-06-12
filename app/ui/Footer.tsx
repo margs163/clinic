@@ -1,6 +1,5 @@
 import { Facebook, Instagram, PhoneCall, Twitter } from "lucide-react";
 import Link from "next/link";
-const times = ["8:00", "19:00", "8:00", "12:00"];
 
 export default function Footer() {
   return (

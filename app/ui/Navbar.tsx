@@ -1,8 +1,6 @@
 "use client";
-import Image from "next/image";
-import logo from "@/assets/logo.png";
 import { ChevronDown, Menu, Search } from "lucide-react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 export default function Navbar() {

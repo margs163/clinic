@@ -86,7 +86,7 @@ export default function Hero() {
       <div className="flex flex-col items-start justify-start gap-6 sm:gap-12 lg:gap-20">
         <div className="flex flex-col gap-2 sm:gap-4">
           <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-gray-800">
-            Consult your and your family's health
+            Consult your and your family$apos;s health
           </h3>
           <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg text-gray-600">
             Wether you require routine check-ups or specialized treatments our

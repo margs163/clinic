@@ -1,5 +1,4 @@
 import {
-  User,
   PhoneCall,
   CalendarCheck,
   Compass,

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "./ui/home/Hero";
 import Location from "./ui/home/Location";
 import Moto from "./ui/home/Moto";
