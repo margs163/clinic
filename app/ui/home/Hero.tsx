@@ -83,28 +83,28 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-start px-2 sm:px-4 gap-10 lg:gap-10 sm:gap-14">
-      <div className="flex flex-col items-start justify-start gap-6 sm:gap-12">
+      <div className="flex flex-col items-start justify-start gap-6 sm:gap-12 lg:gap-20">
         <div className="flex flex-col gap-2 sm:gap-4">
-          <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800">
+          <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-gray-800">
             Consult your and your family's health
           </h3>
-          <p className="text-sm sm:text-base md:text-lg text-gray-600">
+          <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg text-gray-600">
             Wether you require routine check-ups or specialized treatments our
             team is here to provide the care you deserve
           </p>
         </div>
         <div className="flex gap-2 items-stretch justify-start">
-          <button className="rounded-md bg-blue-500 hover:bg-blue-600 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm font-medium text-white">
+          <button className="rounded-md bg-teal-500 hover:bg-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium text-white">
             Make an appointment
           </button>
-          <button className="rounded-md bg-transparent hover:bg-gray-100 text-gray-800 border-2 border-blue-500 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm font-medium">
+          <button className="rounded-md bg-transparent hover:bg-gray-100 text-gray-800 border-2 border-teal-500 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium">
             See prices
           </button>
         </div>
       </div>
-      <div className="overflow-hidden relative shadow-lg rounded-lg">
+      <div className="overflow-hidden relative shadow-lg rounded-lg max-w-[360px] sm:max-w-[570px] md:max-w-[650px] lg:max-w-[480px] lg:h-[360px] xl:max-w-[650px] xl:h-[400px]">
         <div
-          className={`flex transition-transform ease-out duration-500 lg:max-w-[1200px] lg:min-h-[430px] -translate-x-[${
+          className={`flex transition-transform ease-out duration-500 w-full h-full -translate-x-[${
             currentIndex * 100
           }%]`}
           onTouchStart={handleTouchStart}
@@ -115,7 +115,7 @@ export default function Hero() {
               <Image
                 key={index}
                 src={item.src}
-                className=" object-cover w-[360px] h-[230px] lg:h-auto lg:w-full lg:shrink-0 lg:grow-0 lg:object-cover sm:w-[570px] sm:h-[350px] md:h-[380px] md:w-[650px] rounded-lg pointer-events-none"
+                className=" object-cover object-center h-full w-full shrink-0 rounded-lg pointer-events-none"
                 alt="image"
               />
             );

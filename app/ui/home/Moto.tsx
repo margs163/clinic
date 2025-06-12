@@ -8,12 +8,12 @@ const people = [person1, person2, person3, person4];
 
 export default function Moto() {
   return (
-    <section className="flex flex-col gap-6 sm:gap-10 items-center justify-start px-4 mt-10">
+    <section className="flex flex-col gap-6 sm:gap-10 items-center justify-start px-4 lg:max-w-[60%] mx-auto lg:mt-10">
       <div className="space-y-6">
         <h3 className="text-lg sm:text-2xl font-normal tracking-wide text-center text-gray-800 pointer-events-none">
           We strive to improve the quality of life of our patients by providing
-          them with <span className=" text-blue-600">professional</span> and{" "}
-          <span className="text-blue-600">effective</span> medical care.
+          them with <span className=" text-teal-600">professional</span> and{" "}
+          <span className="text-teal-600">effective</span> medical care.
         </h3>
         <div className="flex flex-col gap-1 items-center justify-center">
           <div className="flex">

@@ -8,6 +8,8 @@ import image6 from "@/assets/about/6.png";
 import image7 from "@/assets/about/7.png";
 import image8 from "@/assets/about/8.png";
 import Image, { StaticImageData } from "next/image";
+import { title } from "process";
+import { useState, useEffect } from "react";
 
 const images: StaticImageData[] = [
   image1,
@@ -17,9 +19,38 @@ const images: StaticImageData[] = [
   image5,
   image6,
   image7,
-  image8,
 ];
-import { useState, useEffect } from "react";
+
+const achievments = [
+  {
+    title: "Check-Ups Made",
+    stat: "10,000+",
+    bg: "bg-blue-50",
+    heading: "text-blue-400",
+    bigHeading: "text-blue-700",
+  },
+  {
+    title: "Happy Clients",
+    stat: "10,000+",
+    bg: "bg-green-50",
+    heading: "text-green-400",
+    bigHeading: "text-green-700",
+  },
+  {
+    title: "Happy Reviews",
+    stat: "200+",
+    bg: "bg-yellow-50",
+    heading: "text-yellow-400",
+    bigHeading: "text-yellow-700",
+  },
+  {
+    title: "Working Since",
+    stat: "2020",
+    bg: "bg-red-50",
+    heading: "text-red-400",
+    bigHeading: "text-red-700",
+  },
+];
 export default function About() {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
@@ -60,10 +91,10 @@ export default function About() {
     }
   }
   return (
-    <section className="p-6 sm:p-8 lg:p-10 mx-2 lg:mx-0 rounded-2xl border border-gray-200 bg-white shadow-sm relative flex flex-col lg:flex-row lg:items-start gap-8 sm:gap-12">
-      <div className="overflow-hidden relative shadow-sm rounded-lg max-w-[310px] sm:max-w-[540px] md:max-w-[598px] lg:max-w-[400px] lg:max-h-[280px] h-auto">
+    <section className="p-6 sm:p-8 lg:p-10 xl:p-12 mx-2 lg:mx-0 rounded-2xl xl:rounded-3xl border border-gray-200 bg-white shadow-sm shadow-gray-200 relative flex flex-col lg:flex-row lg:items-start gap-8 sm:gap-12 lg:gap-14">
+      <div className="overflow-hidden relative shadow-sm rounded-lg max-w-max sm:max-w-max md:max-w-max lg:max-w-[400px] lg:h-[340px] xl:max-w-[560px] xl:h-[380px] h-[190px] sm:h-[290px] md:h-[330px]">
         <div
-          className={`flex transition-transform ease-out duration-500 -translate-x-[${
+          className={`flex transition-transform ease-out duration-500 w-full h-full -translate-x-[${
             currentIndex * 100
           }%]`}
           onTouchStart={handleTouchStart}
@@ -74,21 +105,21 @@ export default function About() {
               <Image
                 key={index}
                 src={item}
-                className=" object-cover lg:w-full lg:h-auto lg:shrink-0 rounded-xl pointer-events-none"
+                className=" object-cover object-bottom-right w-full h-full shrink-0 rounded-xl pointer-events-none lg:rounded-2xl"
                 alt="image"
               />
             );
           })}
         </div>
-        <div className="pointer-events-none absolute inset-x-0 h-9 bottom-0 rounded-b-lg bg-gradient-to-t from-black/40 to-transparent z-10">
-          <div className="w-full inset-0 flex flex-col justify-end p-4 items-start z-20">
-            <div className="flex gap-1 items-center justify-center w-full min-h-3">
+        <div className="pointer-events-none absolute inset-x-0 h-9 xl:h-12 bottom-0 rounded-b-lg bg-gradient-to-t from-black/40 to-transparent z-10">
+          <div className="w-full inset-0 flex flex-col justify-end p-4 items-start z-20 h-full">
+            <div className="flex gap-1 items-center justify-center w-full">
               {images.map((_, i) => {
                 return (
                   <div
                     key={i}
-                    className={`transition-all w-1 h-1 rounded-full bg-white ${
-                      currentIndex === i ? "p-[3px]" : " opacity-50"
+                    className={`transition-all w-1 h-1 xl:w-1.5 xl:h-1.5 rounded-full bg-white ${
+                      currentIndex === i ? "p-[3px] xl:p-[3xp]" : " opacity-50"
                     }`}
                   ></div>
                 );
@@ -97,19 +128,36 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 sm:gap-10 lg:gap-10 items-start">
+      <div className="flex flex-col sm:grid sm:grid-cols-[0.6fr_0.4fr] sm:justify-items-start md:flex gap-8 sm:gap-6 lg:gap-4 items-start xl:gap-10">
         <div className="space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-800">
+          <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-gray-800">
             About Medical Clinic Levita
           </h2>
-          <p className=" text-xs sm:text-sm md:text-base lg:text-sm lg:font-normal tracking-wider text-gray-500 font-medium leading-normal">
+          <p className=" text-xs sm:text-sm md:text-sm lg:text-xs xl:text-base lg:font-normal xl:font-medium tracking-wider text-gray-500 leading-normal">
             Levita Clinic - is a modern medical institution that strives to
             provide high-quality medical care and attention to its patients. Its
             goal is to offer accessible and innovative medical services,
             ensuring the highest standard of care and treatment.
           </p>
         </div>
-        <button className="rounded-md bg-blue-500 mt-auto hover:bg-blue-600 px-6 py-2 text-xs sm:text-sm lg:text-xs font-medium text-white">
+        <div className="grid grid-cols-2 gap-2 lg:grid-cols-4">
+          {achievments.map((i1, i2) => {
+            return (
+              <div
+                key={i2}
+                className={`rounded-lg px-6 py-4 flex flex-col gap-1 text-center items-center justify-start ${i1.bg}`}
+              >
+                <h3 className={`text-xs ${i1.heading} font-normal`}>
+                  {i1.title}
+                </h3>
+                <h1 className={`text-base font-bold ${i1.bigHeading}`}>
+                  {i1.stat}
+                </h1>
+              </div>
+            );
+          })}
+        </div>
+        <button className="rounded-md bg-teal-500 mt-auto hover:bg-teal-600 px-6 py-2 text-xs sm:text-sm xl:text-sm lg:text-xs font-medium text-white">
           Learn More
         </button>
       </div>

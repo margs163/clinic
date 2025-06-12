@@ -16,7 +16,7 @@ export default function Navbar() {
           <div>
             <Link
               href={"#"}
-              className="text-2xl text-blue-800 font-extrabold uppercase"
+              className="text-2xl text-teal-700 font-extrabold uppercase"
             >
               Levita
             </Link>
@@ -76,7 +76,7 @@ export default function Navbar() {
               <Link href={"#"}>Licensing</Link>
             </li>
             <li className="px-4 py-3 w-full mt-6">
-              <button className="px-6 py-3 rounded-lg bg-blue-500 text-white font-medium w-full hover:bg-blue-600">
+              <button className="px-6 py-3 rounded-lg bg-teal-500 text-white font-medium w-full hover:bg-teal-600">
                 Make an appointment
               </button>
             </li>
@@ -87,7 +87,7 @@ export default function Navbar() {
         <div>
           <Link
             href={"#"}
-            className="text-3xl text-blue-700 font-extrabold uppercase"
+            className="text-3xl text-teal-700 font-extrabold uppercase"
           >
             Levita
           </Link>
@@ -111,7 +111,7 @@ export default function Navbar() {
         </ul>
         <div className="flex gap-4 items-center">
           <Search />
-          <button className="px-4 py-2 rounded-lg bg-blue-500 text-white font-medium w-full hover:bg-blue-600 text-sm">
+          <button className="px-4 py-2 rounded-lg bg-teal-500 text-white font-medium w-full hover:bg-teal-600 text-sm">
             Appointment
           </button>
         </div>

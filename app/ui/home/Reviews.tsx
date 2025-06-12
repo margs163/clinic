@@ -28,10 +28,10 @@ const testimonials: ReviewInfo[] = [
   },
   {
     picture: person2,
-    author: "Leila Davletova",
+    author: "Indira Oktyabr",
     rating: 5,
     review:
-      "Обращались в эту клинику 2-ой раз и не пожалели 👍🏻👍🏻 отличный кардиолог Хагай Е., и девочки администраторы вежливые и приятные 👍🏻🤗.",
+      "3 қызымның жүректерін осы клиникада тексерттім. Каждый раз келген сайын өте сыпайы түрде жауап береді. Балалар күніне орай 3 ші қызымды тегін қарады) Кардиолог Хагай Еленаға мың алғыс! Өте мықты профессиональный барлығы!",
   },
   {
     picture: person3,
@@ -42,10 +42,10 @@ const testimonials: ReviewInfo[] = [
   },
   {
     picture: person4,
-    author: "Ульяна",
+    author: "Khalida Kulumben",
     rating: 5,
     review:
-      "Обращалась в процедурный кабинет. Медсестра мастер своего дела - ничего не болело и сами процедуры быстрые и безболезненные. Очень понравилось",
+      "Приходили впервые в день открытых дверей, провели сыну Узи сердца бесплатно. Такой чуткий доктор, очень понравилось отношение, то, что по записи, уютно и чисто! Узи проводила Хагай Елена Игоревна, доктор с большой буквы! Будем пользоваться услугами данного центра👍🏻",
   },
   {
     picture: person5,
@@ -86,7 +86,7 @@ export default function Reviews() {
                 key={index}
                 className=" hover:scale-105 transition-all"
               >
-                <div className="flex flex-col items-start justify-start gap-4 sm:gap-6 px-6 py-4 pb-6 sm:p-8 sm:px-10 rounded-3xl shadow-md border border-gray-100 bg-white hover:shadow-lg transition-shadow">
+                <div className="flex flex-col items-start justify-start gap-4 sm:gap-6 px-6 py-4 pb-6 sm:p-8 sm:px-10 rounded-3xl shadow-sm border border-gray-100 bg-white hover:shadow-md transition-shadow">
                   <div className="space-y-4 sm:space-y-6">
                     <div className="flex justify-between items-center">
                       <Quote className=" size-5 sm:size-7 border rounded-full border-gray-200 text-slate-400 p-3 shrink-0 box-content" />
@@ -133,6 +133,55 @@ export default function Reviews() {
         <CarouselPrevious className="-left-3 -translate-y-0 translate-x-36 sm:translate-x-64 top-[24rem] sm:top-[26rem]" />
         <CarouselNext className="-right-3 -translate-y-0 -translate-x-36 sm:-translate-x-64 top-[24rem] sm:top-[26rem]" />
       </Carousel>
+      <div className="hidden lg:grid lg:grid-cols-2 gap-6 xl:grid-cols-3 justify-stretch items-start">
+        {testimonials.map((it, ind) => {
+          return (
+            <div
+              key={ind}
+              className=" flex flex-col items-start justify-start gap-4 sm:gap-6 px-6 py-4 pb-6 sm:p-8 sm:px-10 lg:px-6 lg:py-6 lg:gap-4 rounded-3xl shadow-sm shadow-gray-200 border border-gray-100 bg-white hover:shadow-md transition-all"
+            >
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex justify-between items-center">
+                  <Quote className=" size-5 sm:size-7 lg:size-5 border rounded-full border-gray-100 text-slate-400 p-3 shrink-0 box-content" />
+                  <div className="flex gap-1">
+                    {Array.from({ length: 4 }).map((_, i) => {
+                      return (
+                        <Image
+                          key={`${i}`}
+                          className="h-4 w-4 sm:h-6 sm:w-6 lg:h-4 lg:w-4"
+                          src={starSVG}
+                          alt={`${i}`}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
+                <p className="text-sm sm:text-base lg:text-sm font-normal leading-relaxed text-gray-800 pointer-events-none">
+                  {it.review}
+                </p>
+              </div>
+              <div className="space-y-4 w-full">
+                <hr className="w-full h-1.5 sm:h-2 text-gray-50 rounded-3xl" />
+                <div className="flex justify-start items-center gap-4">
+                  <Image
+                    src={it.picture}
+                    alt={`${ind}`}
+                    className="w-12 h-12 sm:w-16 sm:h-16 lg:w-14 lg:h-14 rounded-full object-cover"
+                  />
+                  <div>
+                    <h3 className=" text-gray-800 font-bold text-base sm:text-lg lg:text-base">
+                      {it.author}
+                    </h3>
+                    <p className="text-sm font-medium text-gray-600 sm:text-base lg:text-sm">
+                      2GIS reviewer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

@@ -32,9 +32,9 @@ const serviceDoctors: SpecialistInfo[] = [
     level: "First category doctor",
   },
   {
-    src: doctor17,
-    name: "Сабеков Ринат Дулатбекович",
-    role: "Vascular Surgeon",
+    src: doctor9,
+    name: "Талгат Асылбек Талгатулы",
+    role: "Children Infectionist",
     exp: "12+ years",
     level: "Highest category doctor",
   },
@@ -66,13 +66,7 @@ const serviceDoctors: SpecialistInfo[] = [
     exp: "8+ years",
     level: "Urgent help doctor",
   },
-  {
-    src: doctor9,
-    name: "Талгат Асылбек Талгатулы",
-    role: "Children Infectionist",
-    exp: "12+ years",
-    level: "Highest category doctor",
-  },
+
   {
     src: doctor2,
     name: "Иманов Арман Казиретович",
@@ -121,6 +115,13 @@ const serviceDoctors: SpecialistInfo[] = [
     role: "Allergist",
     exp: "12+ years",
     level: "First category doctor",
+  },
+  {
+    src: doctor17,
+    name: "Сабеков Ринат Дулатбекович",
+    role: "Vascular Surgeon",
+    exp: "12+ years",
+    level: "Highest category doctor",
   },
   {
     src: doctor20,
@@ -200,49 +201,48 @@ export default function Specialists() {
           {serviceDoctors.map((item, index) => (
             <CarouselItem
               key={index}
-              className=" sm:basis-1/2 lg:basis-1/4 xl:basis-1/4 pl-0 transition-all drop-shadow-sm sm:pl-6"
+              className=" sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 px-4 sm:px-0 transition-all sm:pl-6 lg:max-h-[380px] lg:min-h-0 max-h-[360px] sm:min-h-[360px]"
             >
-              <div className="relative items-start rounded-xl bg-gray-100 border border-gray-200 overflow-hidden w-full h-full">
+              <div className="relative items-start h-full w-full rounded-xl bg-gray-100 border border-gray-200 overflow-hidden shadow-sm">
                 <Image
                   src={item.src}
                   alt={`${index}`}
-                  className="object-cover rounded-lg contrast-[110%] w-full h-full"
+                  className=" object-cover rounded-lg w-full h-full object-top"
                 />
                 <div
-                  className={` flex flex-col gap-3 p-5 sm:pb-2 bg-white absolute bottom-0 rounded-b-xl w-full overflow-hidden h-auto sm:h-[50%] md:h-[45%]`}
+                  className={` flex flex-col gap-3 p-5 sm:pb-2 bg-white absolute bottom-0 rounded-b-xl w-full overflow-hidden h-[40%] sm:h-[50%] md:h-[50%] lg:h-[43%]`}
                 >
                   <div className="">
-                    <h4 className="sm:text-lg font-bold text-gray-800">
+                    <h4 className="sm:text-lg lg:text-base font-bold text-gray-800">
                       {item.name}
                     </h4>
-                    <h4 className="text-sm sm:text-base font-semibold text-blue-700">
+                    <h4 className="text-sm sm:text-base lg:text-sm font-semibold text-teal-700">
                       {item.role}
                     </h4>
                   </div>
                   <div className="space-y-2">
                     <div className="flex gap-2 items-center justify-start">
-                      <BriefcaseBusiness className="size-4 sm:size-5 text-gray-700" />
-                      <p className="text-xs sm:text-sm text-gray-700">
+                      <BriefcaseBusiness className="size-4 sm:size-5 lg:size-4 text-gray-700" />
+                      <p className="text-xs sm:text-sm lg:text-xs text-gray-700">
                         {item.exp}
                       </p>
                     </div>
                     <div className="flex gap-2 items-start justify-start">
-                      <GraduationCap className="size-4 sm:size-5 text-gray-700" />
-                      <p className="text-xs sm:text-sm text-gray-700">
+                      <GraduationCap className="size-4 sm:size-5 lg:size-4 text-gray-700" />
+                      <p className="text-xs sm:text-sm lg:text-xs text-gray-700">
                         {item.level}
                       </p>
                     </div>
                   </div>
-                  {/* <button className="rounded-md bg-blue-500 hover:bg-blue-600 px-4 py-2 mt-2 text-xs font-medium text-white self-start">
-                    Learn More
-                  </button> */}
                 </div>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="-left-3 -translate-y-0 translate-x-36 md:translate-x-72 top-[24rem] md:top-[29rem]" />
-        <CarouselNext className="-right-3 -translate-y-0 -translate-x-36 md:-translate-x-72 top-[24rem] md:top-[29rem]" />
+        <div className="absolute -translate-y-0 flex flex-row gap-8 sm:gap-10 -bottom-12 sm:-bottom-14 w-full justify-center">
+          <CarouselPrevious className="static " />
+          <CarouselNext className=" static" />
+        </div>
       </Carousel>
     </section>
   );
