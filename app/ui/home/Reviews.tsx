@@ -52,7 +52,7 @@ const testimonials: ReviewInfo[] = [
     author: "Avalone Derpy",
     rating: 5,
     review:
-      "Отзыв пишу очень поздно, т.к. был тут на процедурах еще зимой, но медсестра Нургуль - легенда. Благодаря ей и удобству клиники в целом (смарт-тв на капельнице, уютная атмосфера) не могу поверить, что лечение стало приятным воспоминанием. Еще и стоит недорого, как так?",
+      "Отзыв пишу очень поздно, т.к. был тут на процедурах еще зимой, но медсестра Нургуль - легенда. Благодаря ей и удобству клиники в целом (смарт-тв на капельнице, уютная атмосфера) не могу поверить, что лечение стало приятным воспоминанием.",
   },
   {
     picture: person6,
@@ -130,8 +130,10 @@ export default function Reviews() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="-left-3 -translate-y-0 translate-x-36 sm:translate-x-64 top-[24rem] sm:top-[26rem]" />
-        <CarouselNext className="-right-3 -translate-y-0 -translate-x-36 sm:-translate-x-64 top-[24rem] sm:top-[26rem]" />
+        <div className="absolute -translate-y-0 flex flex-row gap-8 sm:gap-10 -bottom-8 sm:-bottom-14 w-full justify-center">
+          <CarouselPrevious className="static " />
+          <CarouselNext className=" static" />
+        </div>
       </Carousel>
       <div className="hidden lg:grid lg:grid-cols-2 gap-6 xl:grid-cols-3 justify-stretch items-start">
         {testimonials.map((it, ind) => {
