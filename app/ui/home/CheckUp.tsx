@@ -62,7 +62,7 @@ export default function CheckUp() {
           <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
             The Importance of Regular Check-Ups
           </h2>
-          <p className=" text-xs sm:text-sm md:text-base text-gray-500 font-medium">
+          <p className=" text-xs sm:text-sm md:text-base text-gray-500 font-medium xl:max-w-[85%]">
             According to the Centers for Desease Control and Prevention, regular
             check-ups can reduce the risk of serious illnesses by up to 50%.
             Make sure to schedule your annual check-up today to stay on top of
@@ -73,7 +73,7 @@ export default function CheckUp() {
           Book an appointment
         </button>
       </div>
-      <div className="min-w-[45%] xl:min-w-[44%] self-center xl:ml-auto -top-4 xl:-top-12 relative lg:inline-block hidden">
+      <div className="min-w-[45%] xl:min-w-[44%] self-center xl:ml-auto -top-4 xl:-top-12 relative lg:inline-block hidden xl:scale-108">
         <div className="w-full absolute -top-32 flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-3">
           <div className="flex gap-4 sm:gap-10 lg:gap-4 justify-center">
             <Image

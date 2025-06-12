@@ -50,6 +50,7 @@ export default function Appointment() {
             placeholder="Appointment date"
             className="focus:outline-none text-gray-700 font-medium text-xs w-full"
             type="date"
+            defaultValue={new Date().toISOString().split("T")[0]}
           />
         </div>
         <div className="border flex gap-3 border-gray-200 transition-colors focus-within:border-gray-200 focus-within:bg-gray-50 rounded-2xl px-4 py-3 bg-white items-center w-full">
