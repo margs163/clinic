@@ -102,7 +102,7 @@ export default function Services() {
           Our Services
         </h3>
         <Link
-          href={"#"}
+          href={"/directions"}
           className="text-xs sm:text-sm flex gap-1 items-center text-gray-700 hover:text-blue-800"
         >
           More
