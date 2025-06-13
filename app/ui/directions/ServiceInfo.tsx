@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function ServiceInfo() {
   return (
-    <section className="space-y-10 bg-white">
+    <section className="space-y-10">
       <Image
         src={allergist}
         alt="allergist"
         className="rounded-xl shadow-sm border border-gray-200"
       />
-      <div className="flex flex-col gap-2 p-6 rounded-xl border border-gray-200 shadow-sm">
+      <div className="flex flex-col gap-2 p-6 rounded-xl border border-gray-200 shadow-sm bg-white">
         <h4 className="font-semibold text-gray-800 text-lg">
           About the Service
         </h4>
