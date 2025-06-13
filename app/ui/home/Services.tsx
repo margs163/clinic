@@ -32,10 +32,11 @@ const serviceDoctors = [
     color: "from-teal-600 to-teal-400/90",
   },
   {
-    src: heartsurgeon,
-    title: "Adults Heart Surgery",
+    src: cardeologist,
+    title: "Adults Cardiology",
     color: "from-teal-600 to-teal-400/90",
   },
+
   {
     src: adulttherapist,
     title: "Adults Therapist",
@@ -47,12 +48,12 @@ const serviceDoctors = [
     title: "Adults Neurology",
     color: "from-teal-600 to-teal-400/90",
   },
-
   {
-    src: cardeologist,
-    title: "Adults Cardiology",
+    src: heartsurgeon,
+    title: "Adults Heart Surgery",
     color: "from-teal-600 to-teal-400/90",
   },
+
   {
     src: infectionist,
     title: "Kids Infectionist",
@@ -128,7 +129,7 @@ export default function Services() {
                   className="object-cover w-full h-full rounded-xl drop-shadow-sm "
                 />
                 <div
-                  className={`absolute bottom-0 rounded-b-xl w-full pl-4 sm:pl-5 py-1 sm:py-2 lg:py-3 bg-gradient-to-r ${item.color}`}
+                  className={`absolute bottom-0 rounded-b-xl w-full pl-4 sm:pl-5 py-2 sm:py-2 lg:py-3 bg-gradient-to-r ${item.color}`}
                 >
                   <Link
                     href={"#"}
