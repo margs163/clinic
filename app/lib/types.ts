@@ -5,6 +5,7 @@ export type DirectionCardProps = {
   icon: ReactElement;
   title: string;
   type: "consult" | "diagnose";
+  img: StaticImageData;
 };
 
 export type ImagePayload = {

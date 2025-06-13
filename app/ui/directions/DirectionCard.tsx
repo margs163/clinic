@@ -1,11 +1,18 @@
 import { type DirectionCardProps } from "@/app/lib/types";
+import Link from "next/link";
 export default function DirectionCard({
   directionCardObj,
 }: {
   directionCardObj: DirectionCardProps;
 }) {
   return (
-    <div className="flex flex-col justify-between items-start gap-6 p-6 bg-white rounded-2xl border border-gray-200 shadow-sm shadow-gray-200 hover:bg-slate-50 hover:shadow-md transition-all cursor-pointer">
+    <Link
+      href={
+        "/directions/" +
+        directionCardObj.title.split(" ").join("-").toLowerCase()
+      }
+      className="flex flex-col justify-between items-start gap-6 p-6 bg-white rounded-2xl border border-gray-200 shadow-sm shadow-gray-200 hover:bg-slate-50 hover:shadow-md transition-all cursor-pointer w-full"
+    >
       <div className="flex justify-between items-start w-full">
         <div className="rounded-full p-4 text-teal-600 bg-gray-100">
           {directionCardObj.icon}
@@ -26,6 +33,6 @@ export default function DirectionCard({
           </h3>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

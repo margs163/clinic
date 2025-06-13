@@ -19,6 +19,17 @@ import {
   Microscope,
   Slice,
 } from "lucide-react";
+import allergist from "@/assets/services/allergist.jpg";
+import cardeologist from "@/assets/services/cardiologist.jpg";
+import infectionist from "@/assets/services/infectionist.jpg";
+import neurologist from "@/assets/services/neurologist.jpg";
+import neurosurgeon from "@/assets/services/neurosurgeon.jpg";
+import oncologist from "@/assets/services/oncologist.jpg";
+import pediatrist from "@/assets/services/pediatrist.jpg";
+import surgeon from "@/assets/services/surgeon.jpg";
+import traumologist from "@/assets/services/traumologist.jpg";
+import urologist from "@/assets/services/urologist.jpg";
+
 import DirectionCard from "../ui/directions/DirectionCard";
 
 const availableDirections: DirectionCardProps[] = [
@@ -26,66 +37,79 @@ const availableDirections: DirectionCardProps[] = [
     icon: <Stethoscope />,
     title: "Adults traumology",
     type: "consult",
+    img: traumologist,
   },
   {
     icon: <Syringe />,
     title: "Adults Urology",
     type: "consult",
+    img: urologist,
   },
   {
     icon: <Droplets />,
     title: "Kids Allergist",
     type: "consult",
+    img: allergist,
   },
   {
     icon: <HeartPulse />,
     title: "Adults Heart Surgery",
     type: "consult",
+    img: surgeon,
   },
   {
     icon: <Stethoscope />,
     title: "Adults Therapist",
     type: "consult",
+    img: pediatrist,
   },
   {
     icon: <Brain />,
     title: "Adults Neurology",
     type: "consult",
+    img: neurologist,
   },
   {
     icon: <Stethoscope />,
     title: "Adults Cardiology",
     type: "consult",
+    img: cardeologist,
   },
   {
     icon: <Bug />,
     title: "Kids Infectionist",
     type: "consult",
+    img: infectionist,
   },
   {
     icon: <Brain />,
     title: "Kids Neurology",
     type: "consult",
+    img: neurologist,
   },
   {
     icon: <Slice />,
     title: "Adults Neuro Surgery",
     type: "consult",
+    img: neurosurgeon,
   },
   {
     icon: <Microscope />,
     title: "Adults Oncology-mommology",
     type: "consult",
+    img: oncologist,
   },
   {
     icon: <UserPlus />,
     title: "Adults Pediatrist",
     type: "consult",
+    img: pediatrist,
   },
   {
     icon: <Slice />,
     title: "Kids Surgery",
     type: "consult",
+    img: surgeon,
   },
 ];
 
@@ -101,7 +125,7 @@ export default function page() {
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/components" className="lg:text-base">
+            <BreadcrumbLink href="/directions" className="lg:text-base">
               Directions
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -112,16 +136,16 @@ export default function page() {
           <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl">
             Directions
           </h2>
-          <TabsList className="w-full px-6 py-8 rounded-xl sm:p-6 lg:p-8 max-w-[320px]">
+          <TabsList className="w-full px-4 py-7 rounded-xl sm:p-6 lg:p-8 max-w-[320px]">
             <TabsTrigger
               value="consult"
-              className=" px-6 py-5 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-400 data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+              className=" px-5 py-4 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-400 data-[state=active]:text-white data-[state=active]:font-semibold transition-all text-xs"
             >
               Consultation
             </TabsTrigger>
             <TabsTrigger
               value="diagnose"
-              className="px-6 py-5 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-400 data-[state=active]:text-white data-[state=active]:font-semibold transition-all"
+              className="px-5 py-4 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-400 data-[state=active]:text-white data-[state=active]:font-semibold transition-all text-xs"
             >
               Diagnosis
             </TabsTrigger>
