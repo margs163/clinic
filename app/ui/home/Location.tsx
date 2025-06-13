@@ -48,7 +48,7 @@ export default function Location() {
             <div className="p-3 sm:p-4 lg:p-3 xl:p-4 flex justify-center items-center bg-teal-500 rounded-xl">
               {item.icon}
             </div>
-            <div className="flex flex-col justify-start items-start gap-0.5 md:gap-1 lg:gap-0 xl:gap-1">
+            <div className="flex flex-col justify-start items-start gap-1 md:gap-1 lg:gap-0 xl:gap-1">
               <h3 className="font-medium text-xs sm:text-lg lg:text-base xl:text-lg text-gray-500">
                 {item.title}
               </h3>
