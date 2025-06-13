@@ -41,7 +41,7 @@ export default function Doctors() {
             return (
               <CarouselItem
                 key={index}
-                className="p-6 rounded-xl border border-gray-200 flex justify-between gap-6 shadow-sm"
+                className="p-6 rounded-xl border border-gray-200 flex justify-between gap-6 shadow-sm bg-white"
               >
                 <Image
                   src={doctor22}

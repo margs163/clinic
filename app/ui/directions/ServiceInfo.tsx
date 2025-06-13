@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ServiceInfo() {
   return (
-    <section className="space-y-10">
+    <section className="space-y-10 bg-white">
       <Image
         src={allergist}
         alt="allergist"

@@ -10,7 +10,7 @@ export default function Advantages({
 }) {
   return (
     <section>
-      <div className="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 shadow-sm items-stretch">
+      <div className="flex flex-col gap-4 p-6 rounded-xl border border-gray-200 shadow-sm items-stretch bg-white">
         <h4 className="font-semibold text-gray-800 text-lg mb-2">Advantages</h4>
         {advantages.map((item, index) => {
           return (
@@ -22,7 +22,7 @@ export default function Advantages({
                 <h3 className="text-sm font-semibold text-gray-800">
                   {item.title}
                 </h3>
-                <p className="text-xs font-normal text-gray-600 max-w-[90%]">
+                <p className="text-xs font-normal text-gray-600 max-w-[95%]">
                   {item.description}
                 </p>
               </div>
