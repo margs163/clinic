@@ -1,19 +1,16 @@
-import allergist from "@/assets/services/allergist.jpg";
-import Image from "next/image";
-
 export default function ServiceInfo() {
   return (
     <section className="space-y-10">
-      <Image
+      {/* <Image
         src={allergist}
         alt="allergist"
-        className="rounded-xl shadow-sm border border-gray-200"
-      />
-      <div className="flex flex-col gap-2 p-6 rounded-xl border border-gray-200 shadow-sm bg-white">
-        <h4 className="font-semibold text-gray-800 text-lg">
+        className="rounded-xl shadow-sm border border-gray-200 hidden"
+      /> */}
+      <div className="flex flex-col gap-2 p-6 md:p-8 xl:p-9 rounded-xl border border-gray-200 shadow-sm bg-white">
+        <h4 className="font-semibold text-gray-800 text-lg md:text-xl">
           About the Service
         </h4>
-        <div className="space-y-6 text-sm text-gray-700 font-normal leading-relaxed ">
+        <div className="space-y-6 text-sm xl:text-[15px] text-gray-700 font-normal leading-relaxed ">
           <p>
             Allergy consultation is a comprehensive medical service designed to
             help individuals identify, understand, and manage their allergic

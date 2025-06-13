@@ -17,7 +17,7 @@ export default function DirectionCard({
         <div className="rounded-full p-4 text-teal-600 bg-gray-100">
           {directionCardObj.icon}
         </div>
-        <p className="bg-teal-400 text-white px-4 py-2 text-xs rounded-xl font-semibold">
+        <p className="bg-teal-500 text-white px-4 py-2 text-xs rounded-xl font-semibold">
           {directionCardObj.title.split(" ")[0]}
         </p>
       </div>

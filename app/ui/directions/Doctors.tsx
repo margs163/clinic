@@ -19,7 +19,7 @@ const doctors = [
 ];
 export default function Doctors() {
   return (
-    <section className="mt-6">
+    <section className="mt-6 md:col-start-2 md:col-end-2 md:row-span-1 md:mt-0">
       <Carousel
         opts={{
           align: "start",
@@ -27,7 +27,7 @@ export default function Doctors() {
         className="relative"
       >
         <header className="flex justify-between w-full px-2">
-          <h4 className="font-semibold text-gray-800 text-lg mb-2">
+          <h4 className="font-semibold text-gray-800 text-lg xl:text-xl mb-2">
             Doctors and Stuff
           </h4>
           <div className="flex gap-4 absolute top-4 right-2">
@@ -41,7 +41,7 @@ export default function Doctors() {
             return (
               <CarouselItem
                 key={index}
-                className="p-6 rounded-xl border border-gray-200 flex justify-between gap-6 shadow-sm bg-white"
+                className="p-6 rounded-xl border border-gray-200 flex lg:flex-col justify-between gap-6 shadow-sm bg-white"
               >
                 <Image
                   src={doctor22}
@@ -53,20 +53,20 @@ export default function Doctors() {
                     <h4 className="text-sm lg:text-base font-bold text-gray-800">
                       {item.name}
                     </h4>
-                    <h4 className="text-xs sm:text-base lg:text-sm text-teal-700 uppercase font-bold mt-1">
+                    <h4 className="text-xs lg:text-sm text-teal-700 uppercase font-bold mt-1">
                       {item.role}
                     </h4>
                   </div>
                   <div className="space-y-2">
                     <div className="flex gap-2 items-center justify-start">
-                      <BriefcaseBusiness className="size-4 sm:size-5 lg:size-4 text-gray-700 shrink-0" />
-                      <p className="text-xs sm:text-sm lg:text-xs text-gray-700">
+                      <BriefcaseBusiness className="size-4 xl:size-5 text-gray-700 shrink-0" />
+                      <p className="text-xs xl:text-[13px] text-gray-700">
                         {item.exp}
                       </p>
                     </div>
                     <div className="flex gap-2 items-start justify-start">
-                      <GraduationCap className="size-4 sm:size-5 lg:size-4 text-gray-700 shrink-0" />
-                      <p className="text-xs sm:text-sm lg:text-xs text-gray-700">
+                      <GraduationCap className="size-4 xl:size-5 text-gray-700 shrink-0" />
+                      <p className="text-xs xl:text-[13px] text-gray-700">
                         {item.level}
                       </p>
                     </div>

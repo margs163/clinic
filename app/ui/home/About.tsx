@@ -132,7 +132,7 @@ export default function About() {
           <h2 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-gray-800">
             About Medical Clinic Levita
           </h2>
-          <p className=" text-xs sm:text-sm md:text-sm lg:text-xs xl:text-base lg:font-normal xl:font-medium tracking-wider text-gray-500 leading-normal">
+          <p className=" text-xs font-medium sm:text-sm md:text-sm lg:text-xs xl:text-base lg:font-normal xl:font-medium tracking-wider text-gray-500 leading-normal">
             Levita Clinic - is a modern medical institution that strives to
             provide high-quality medical care and attention to its patients. Its
             goal is to offer accessible and innovative medical services,

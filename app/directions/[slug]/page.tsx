@@ -9,6 +9,8 @@ import ServiceInfo from "@/app/ui/directions/ServiceInfo";
 import Advantages from "@/app/ui/directions/Advantages";
 import Doctors from "@/app/ui/directions/Doctors";
 import MakeAppointment from "@/app/ui/directions/MakeAppointment";
+import Pricing from "@/app/ui/directions/Pricing";
+import WeAreHere from "@/app/ui/directions/WeAreHere";
 
 const advantages = [
   {
@@ -37,39 +39,64 @@ export default async function page({
   const header = slug.split("-").join(" ");
   const capitalHeader = header[0].toUpperCase() + header.slice(1);
   return (
-    <div className="flex flex-col gap-4 py-24 sm:py-32 lg:py-36 max-w-[370px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-[940px] xl:max-w-[1500px] px-4 mx-auto min-h-screen">
-      <Breadcrumb>
+    <div className="flex flex-col gap-4 lg:gap-8 py-24 lg:py-30 lg:pb-16 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-max xl:max-w-[1460px] px-4 mx-auto min-h-screen lg:px-8">
+      <Breadcrumb className="lg:pl-2">
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/" className="lg:text-base">
+            <BreadcrumbLink href="/" className="">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/directions" className="lg:text-base">
+            <BreadcrumbLink href="/directions" className="">
               Directions
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink
-              href={`/directions/${slug}`}
-              className="lg:text-base"
-            >
+            <BreadcrumbLink href={`/directions/${slug}`} className="">
               {capitalHeader}
             </BreadcrumbLink>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <main className="space-y-6">
-        <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl">
-          {capitalHeader}
-        </h2>
-        <ServiceInfo />
-        <Advantages advantages={advantages} />
-        <Doctors />
-        <MakeAppointment />
+      <main className="space-y-6 lg:grid lg:grid-cols-[0.27fr_0.55fr_0.25fr] lg:items-start lg:gap-8">
+        <div className="hidden lg:inline-block lg:space-y-6">
+          <Doctors />
+          <WeAreHere />
+          <MakeAppointment />
+        </div>
+        <div className="space-y-6">
+          <div className="space-y-4">
+            <h2 className="text-2xl font-bold text-gray-800 lg:text-xl pl-2">
+              {capitalHeader}
+            </h2>
+            <ServiceInfo />
+          </div>
+          <div className="hidden lg:block">
+            <Advantages advantages={advantages} />
+          </div>
+        </div>
+        <div className="hidden lg:block">
+          <Pricing />
+        </div>
+        <div className="hidden md:grid md:grid-cols-2 md:gap-6 md:items-start lg:hidden">
+          <Advantages advantages={advantages} />
+          <div className="space-y-4">
+            <Doctors />
+            <WeAreHere />
+          </div>
+        </div>
+        <div className="md:hidden space-y-6">
+          <Advantages advantages={advantages} />
+          <Doctors />
+          <WeAreHere />
+        </div>
+        <div className="lg:hidden">
+          <MakeAppointment />
+          <Pricing />
+        </div>
       </main>
     </div>
   );

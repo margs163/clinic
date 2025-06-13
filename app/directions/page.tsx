@@ -115,17 +115,17 @@ const availableDirections: DirectionCardProps[] = [
 
 export default function page() {
   return (
-    <div className="flex flex-col gap-6 py-24 sm:py-32 lg:py-36 max-w-[370px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-[940px] xl:max-w-[1500px] px-6 mx-auto min-h-screen">
+    <div className="flex flex-col gap-6 py-24 md:py-28 lg:py-30 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-[1000px] xl:max-w-[1460px] px-4 mx-auto min-h-screen lg:px-8">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbLink href="/" className="lg:text-base">
+            <BreadcrumbLink href="/" className="">
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
           <BreadcrumbItem>
-            <BreadcrumbLink href="/directions" className="lg:text-base">
+            <BreadcrumbLink href="/directions" className="">
               Directions
             </BreadcrumbLink>
           </BreadcrumbItem>
@@ -133,19 +133,19 @@ export default function page() {
       </Breadcrumb>
       <Tabs defaultValue="consult" className="w-full flex flex-col gap-12">
         <div className="flex flex-col sm:flex-row justify-between items-stretch  sm:items-center gap-4 w-full">
-          <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl">
+          <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
             Directions
           </h2>
           <TabsList className="w-full px-4 py-7 rounded-xl sm:p-6 lg:p-8 max-w-[320px]">
             <TabsTrigger
               value="consult"
-              className=" px-5 py-4 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-400 data-[state=active]:text-white data-[state=active]:font-semibold transition-all text-xs"
+              className=" px-5 py-4 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-500 data-[state=active]:text-white data-[state=active]:font-semibold transition-all text-xs"
             >
               Consultation
             </TabsTrigger>
             <TabsTrigger
               value="diagnose"
-              className="px-5 py-4 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-400 data-[state=active]:text-white data-[state=active]:font-semibold transition-all text-xs"
+              className="px-5 py-4 sm:p-4 lg:px-6 lg:py-5 data-[state=active]:shadow-none data-[state=active]:bg-teal-500 data-[state=active]:text-white data-[state=active]:font-semibold transition-all text-xs"
             >
               Diagnosis
             </TabsTrigger>

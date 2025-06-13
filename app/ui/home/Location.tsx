@@ -48,14 +48,14 @@ export default function Location() {
             <div className="p-3 sm:p-4 lg:p-3 xl:p-4 flex justify-center items-center bg-teal-500 rounded-xl">
               {item.icon}
             </div>
-            <div className="flex flex-col justify-start items-start sm:gap-0.5 md:gap-1 lg:gap-0 xl:gap-1">
-              <h3 className="font-semibold text-base sm:text-lg lg:text-base xl:text-lg text-gray-800">
+            <div className="flex flex-col justify-start items-start gap-0.5 md:gap-1 lg:gap-0 xl:gap-1">
+              <h3 className="font-medium text-xs sm:text-lg lg:text-base xl:text-lg text-gray-500">
                 {item.title}
               </h3>
-              <p className="text-xs sm:text-sm xl:hidden xl:text-sm lg:hidden text-gray-400">
+              <p className="text-xs sm:text-sm xl:hidden hidden xl:text-sm lg:hidden text-gray-400">
                 {item.description}
               </p>
-              <p className="font-semibold text-sm md:text-base xl:text-base lg:text-sm text-gray-500">
+              <p className="font-semibold text-sm md:text-base xl:text-base lg:text-sm text-gray-800">
                 {item.info}
               </p>
             </div>
@@ -69,19 +69,19 @@ export default function Location() {
               {item.icon}
             </div>
             <div className="flex flex-col justify-start items-start sm:gap-0.5 md:gap-0.5">
-              <h3 className="font-semibold text-base xl:text-lg text-gray-800">
+              <h3 className="font-medium text-xs xl:text-lg text-gray-500">
                 {item.title}
               </h3>
-              <p className="text-xs sm:text-sm lg:hidden xl:hidden xl:text-sm text-gray-400">
+              <p className="text-xs sm:text-sm lg:hidden xl:hidden hidden xl:text-sm text-gray-400">
                 {item.description}
               </p>
-              <p className="font-medium text-sm md:text-base lg:text-sm xl:text-base text-gray-500 flex justify-between">
+              <p className="font-medium text-sm md:text-base lg:text-sm xl:text-base text-gray-800 flex justify-between">
                 <span className="text-gray-700 mr-1">Mon-Fri:</span>
                 <span>
                   {item.info[0]} - {item.info[1]}
                 </span>
               </p>
-              <p className="font-medium text-sm md:text-base lg:text-sm xl:text-base text-gray-500 flex justify-between">
+              <p className="font-medium text-sm md:text-base lg:text-sm xl:text-base text-gray-800 flex justify-between">
                 <span className="text-gray-700 mr-1">Sat:</span>
                 <span>
                   {item.info[2]} - {item.info[3]}
