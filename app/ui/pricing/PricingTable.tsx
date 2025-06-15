@@ -9,7 +9,7 @@ export default function PricingTable() {
         <h3 className="text-left">Book</h3>
       </div>
       {costs.map((item, index) => {
-        const Icon = item.icon;
+        // const Icon = item.icon;
         return (
           <div key={index}>
             <div className="p-4 px-6 space-y-8 border border-gray-200 rounded-md bg-white lg:hidden">
