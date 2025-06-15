@@ -31,11 +31,11 @@ export default function page() {
           <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
             Pricing
           </h2>
-          <div className="lg:hidden">
+          <div className="hidden lg:block">
             <SearchBar />
           </div>
         </div>
-        <section className="space-y-6 flex gap-8 items-start justify-start w-full">
+        <section className="space-y-2 flex flex-col lg:flex-row gap-0 lg:gap-8 items-start justify-start w-full">
           <SearchBar />
           <PricingTable />
         </section>
