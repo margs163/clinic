@@ -1,13 +1,4 @@
 import costs from "@/app/lib/prices";
-import {
-  Table,
-  TableBody,
-  TableCaption,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
 export default function PricingTable() {
   return (
     <div className="space-y-4">
