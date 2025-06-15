@@ -1,11 +1,14 @@
+import { LucideProps } from "lucide-react";
 import { type StaticImageData } from "next/image";
-import { ReactElement } from "react";
+import { ForwardRefExoticComponent, ReactElement, RefAttributes } from "react";
 
 export type ServicePrice = {
   title: string;
   cost: number | string;
   category: "consultation" | "diagnosis";
-  icon: any;
+  icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
 };
 
 export type DirectionCardProps = {
