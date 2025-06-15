@@ -10,7 +10,7 @@ import PricingTable from "../ui/pricing/PricingTable";
 
 export default function page() {
   return (
-    <div className="flex flex-col gap-4 py-24 md:py-28 lg:py-30 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-[1000px] xl:max-w-[1460px] px-4 mx-auto min-h-screen lg:px-8">
+    <div className="flex flex-col gap-4 py-24 md:py-28 lg:py-30 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-[1000px] xl:max-w-[1400px] px-4 mx-auto min-h-screen lg:px-8">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -27,10 +27,15 @@ export default function page() {
         </BreadcrumbList>
       </Breadcrumb>
       <main className="space-y-4">
-        <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
-          Pricing
-        </h2>
-        <section className="space-y-6">
+        <div className="flex flex-col gap-4 md:flex-row md:justify-between">
+          <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl">
+            Pricing
+          </h2>
+          <div className="lg:hidden">
+            <SearchBar />
+          </div>
+        </div>
+        <section className="space-y-6 flex gap-8 items-start justify-start w-full">
           <SearchBar />
           <PricingTable />
         </section>

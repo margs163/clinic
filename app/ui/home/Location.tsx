@@ -43,7 +43,7 @@ export default function Location() {
         return index != 2 ? (
           <div
             key={index}
-            className="flex justify-start items-center py-4 px-6 sm:px-8 sm:py-6 lg:p-6 xl:p-6 xl:px-8 gap-4 border-gray-100 w-full border rounded-2xl bg-white shadow-sm shadow-gray-200 xl:gap-5"
+            className="flex justify-start items-center py-4 px-6 sm:px-8 sm:py-6 lg:p-6 xl:p-6 xl:px-8 gap-4 border-gray-200 w-full border rounded-2xl bg-white shadow-sm shadow-gray-200 xl:gap-5"
           >
             <div className="p-3 sm:p-4 lg:p-3 xl:p-4 flex justify-center items-center bg-teal-500 rounded-xl">
               {item.icon}
@@ -63,7 +63,7 @@ export default function Location() {
         ) : (
           <div
             key={index}
-            className="flex justify-start items-center sm:justify-start py-4 px-6 sm:px-8 sm:py-6 xl:p-6 xl:px-8 lg:py-4 lg:px-6 gap-4 border-gray-100 rounded-2xl border w-full bg-white shadow-sm shadow-gray-200 xl:gap-5"
+            className="flex justify-start items-center sm:justify-start py-4 px-6 sm:px-8 sm:py-6 xl:p-6 xl:px-8 lg:py-4 lg:px-6 gap-4 border-gray-200 rounded-2xl border w-full bg-white shadow-sm shadow-gray-200 xl:gap-5"
           >
             <div className="p-3 sm:p-4 lg:p-3 xl:p-4 flex justify-center items-center bg-teal-500 rounded-xl">
               {item.icon}

@@ -8,11 +8,11 @@ export default function SearchBar() {
   return (
     <div className="relative space-y-4">
       <div className="flex gap-2">
-        <div className="flex gap-2 items-center justify-start border-2 border-gray-200 rounded-lg px-4 py-2 focus-within:border-gray-300 bg-white">
+        <div className="flex gap-2 items-center justify-start border border-gray-200 rounded-lg px-4 py-2 focus-within:border-gray-300 bg-white">
           <Search className="text-gray-700" />
           <input
             type="text"
-            className=" focus-within:outline-none text-sm text-gray-800 font-medium"
+            className=" focus-within:outline-none text-xs text-gray-800 font-medium"
             placeholder="Search for prices..."
           />
         </div>
