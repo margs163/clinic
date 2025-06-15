@@ -7,7 +7,7 @@ import {
 
 export default function Appointment() {
   return (
-    <div className="rounded-2xl xl:rounded-3xl shadow-sm border border-gray-200 p-6 sm:p-8 xl:p-12 bg-white mx-2 lg:mx-0  flex flex-col justify-start items-center gap-8">
+    <div className="rounded-2xl xl:rounded-3xl shadow-sm border border-gray-200 p-6 sm:p-8 xl:p-12 bg-white mx-2 lg:mx-0  flex flex-col justify-start items-center gap-8 lg:hidden">
       <div className="w-full xl:self-center">
         <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-gray-800 leading-12">
           Book an Appointment

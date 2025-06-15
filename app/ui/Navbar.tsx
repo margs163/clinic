@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex justify-between">
           <div>
             <Link
-              href={"#"}
+              href={"/"}
               className="text-2xl text-teal-700 font-extrabold uppercase"
             >
               Levita
@@ -84,7 +84,7 @@ export default function Navbar() {
       <div className="hidden lg:flex justify-between items-center px-5 py-4 sm:px-8 sm:py-6">
         <div>
           <Link
-            href={"#"}
+            href={"/"}
             className="text-3xl text-teal-700 font-extrabold uppercase"
           >
             Levita

@@ -14,7 +14,7 @@ export default function Advantages({
         <h4 className="font-semibold text-gray-800 text-lg mb-2 xl:text-xl">
           Advantages
         </h4>
-        <div className="flex flex-col gap-4 md:gap-6 items-stretch md:grid-cols-2 md:grid">
+        <div className="flex flex-col gap-4 lg:gap-6 items-stretch lg:grid-cols-2 lg:grid">
           {advantages.map((item, index) => {
             return (
               <div key={index} className="flex gap-6 items-start justify-start">

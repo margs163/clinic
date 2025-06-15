@@ -7,6 +7,7 @@ import hero5 from "@/assets/hero/hero52.jpg";
 import { type ImagePayload } from "@/app/lib/types";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const images: ImagePayload[] = [
   {
@@ -83,7 +84,7 @@ export default function Hero() {
 
   return (
     <section className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-start px-2 sm:px-4 gap-10 lg:gap-10 sm:gap-14">
-      <div className="flex flex-col items-start justify-start gap-6 sm:gap-12 lg:gap-20">
+      <div className="flex flex-col items-start justify-start gap-6 sm:gap-12 lg:gap-18">
         <div className="flex flex-col gap-2 sm:gap-4">
           <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-gray-800">
             Consult your and your family&apos;s health
@@ -94,12 +95,18 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex gap-2 items-stretch justify-start">
-          <button className="rounded-md bg-teal-500 hover:bg-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium text-white">
+          <Link
+            href={"#"}
+            className="rounded-md bg-teal-500 hover:bg-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium text-white"
+          >
             Make an appointment
-          </button>
-          <button className="rounded-md bg-transparent hover:bg-gray-100 text-gray-800 border-2 border-teal-500 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium">
+          </Link>
+          <Link
+            href={"/pricing"}
+            className="rounded-md bg-transparent hover:bg-gray-100 text-gray-800 border-2 border-teal-500 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium"
+          >
             See prices
-          </button>
+          </Link>
         </div>
       </div>
       <div className="overflow-hidden relative shadow-lg rounded-lg max-w-[360px] sm:max-w-[570px] md:max-w-[650px] lg:max-w-[480px] lg:h-[360px] xl:max-w-[650px] xl:h-[400px]">

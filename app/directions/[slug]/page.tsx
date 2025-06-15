@@ -39,7 +39,7 @@ export default async function page({
   const header = slug.split("-").join(" ");
   const capitalHeader = header[0].toUpperCase() + header.slice(1);
   return (
-    <div className="flex flex-col gap-4 lg:gap-8 py-24 lg:py-30 lg:pb-16 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-max xl:max-w-[1460px] px-4 mx-auto min-h-screen lg:px-8">
+    <div className="flex flex-col gap-4 lg:gap-6 py-24 lg:py-30 lg:pb-16 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-max xl:max-w-[1460px] px-4 mx-auto min-h-screen lg:px-8">
       <Breadcrumb className="lg:pl-2">
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -86,6 +86,7 @@ export default async function page({
           <div className="space-y-4">
             <Doctors />
             <WeAreHere />
+            <MakeAppointment />
           </div>
         </div>
         <div className="md:hidden space-y-6">
@@ -93,7 +94,7 @@ export default async function page({
           <Doctors />
           <WeAreHere />
         </div>
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <MakeAppointment />
           <Pricing />
         </div>

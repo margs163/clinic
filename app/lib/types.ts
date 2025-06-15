@@ -1,6 +1,13 @@
 import { type StaticImageData } from "next/image";
 import { ReactElement } from "react";
 
+export type ServicePrice = {
+  title: string;
+  cost: number | string;
+  category: "consultation" | "diagnosis";
+  icon: any;
+};
+
 export type DirectionCardProps = {
   icon: ReactElement;
   title: string;
