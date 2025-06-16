@@ -2,11 +2,12 @@
 
 import { Search, SlidersHorizontal } from "lucide-react";
 import { useState } from "react";
+import { uniqueGroups } from "@/app/lib/prices";
 
 export default function SearchBar() {
   const [filterPressed, setFilterPressed] = useState(false);
   return (
-    <div className="relative space-y-4">
+    <div className={`relative ${filterPressed ? "space-y-4" : "space-y-2"}`}>
       <div className="flex gap-2">
         <div className="flex gap-2 items-center justify-start border border-gray-200 rounded-lg px-4 py-2 focus-within:border-gray-300 bg-white">
           <Search className="text-gray-700" />
@@ -33,7 +34,7 @@ export default function SearchBar() {
         <ul className="overflow-hidden flex flex-col gap-4 ">
           <li className="space-y-2">
             <h3 className="text-sm font-medium text-gray-800">Price</h3>
-            <div className="flex gap-2 text-xs w-full text-gray-700">
+            <div className="flex flex-row lg:flex-col lg:items-start gap-2 text-xs w-full text-gray-700">
               <button className=" border border-gray-300 hover:bg-gray-50 rounded-sm p-3 font-medium">
                 From most expensive
               </button>
@@ -65,6 +66,16 @@ export default function SearchBar() {
             </div>
           </li>
         </ul>
+      </div>
+      <div className="flex-col gap-2 rounded-lg bg-white p-4 hidden lg:flex">
+        {uniqueGroups.map((item, index) => (
+          <div
+            className="p-3 px-4 text-sm bg-slate-100 font-medium rounded-lg text-gray-800"
+            key={index}
+          >
+            {item}
+          </div>
+        ))}
       </div>
     </div>
   );

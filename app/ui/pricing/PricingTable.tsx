@@ -1,4 +1,4 @@
-import costs from "@/app/lib/prices";
+import { costs } from "@/app/lib/prices";
 export default function PricingTable() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-1 lg:gap-2 w-full">
@@ -47,7 +47,7 @@ export default function PricingTable() {
             </div>
             <div
               key={index}
-              className="p-4 px-6 space-y-8 border-gray-200 rounded-lg bg-white hidden lg:flex lg:flex-row lg:justify-between lg:items-center"
+              className="p-4 px-6 space-y-8 border-gray-100 rounded-lg bg-white hidden lg:flex lg:flex-row lg:justify-between lg:items-center border"
             >
               <h2 className="text-lg lg:text-sm font-semibold text-gray-800 w-[300px] m-0">
                 {item.title}

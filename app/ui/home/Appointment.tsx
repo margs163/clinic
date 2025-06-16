@@ -3,18 +3,28 @@ import {
   CalendarCheck,
   Compass,
   CircleUserRound,
+  Calendar,
 } from "lucide-react";
 
 export default function Appointment() {
   return (
-    <div className="rounded-2xl xl:rounded-3xl shadow-sm border border-gray-200 p-6 sm:p-8 xl:p-12 bg-white mx-2 lg:mx-0  flex flex-col justify-start items-center gap-8 lg:hidden">
-      <div className="w-full xl:self-center">
+    <div className="rounded-2xl xl:rounded-3xl shadow-sm border border-gray-200 p-6 sm:p-8 xl:p-12 bg-white flex flex-col justify-start items-center gap-8 lg:hidden">
+      <div className="w-full xl:self-center text-center">
+        <div className="flex gap-2 items-center px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mx-auto">
+          <Calendar className=" size-4 text-teal-500" />
+          <p className="text-[10px] text-teal-800 font-semibold">
+            Online Booking
+          </p>
+        </div>
         <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-gray-800 leading-12">
-          Book an Appointment
+          Book an{" "}
+          <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
+            Appointment
+          </span>
         </h3>
         <p className="text-xs sm:text-sm xl:text-base text-gray-600 font-normal sm:font-medium">
-          Book an appointment to a specialized doctor. Choose your suitable
-          date.
+          Schedule your visit with our specialized doctors. Choose your
+          preferred date and time for personalized healthcare.
         </p>
       </div>
       <form className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 sm:gap-3 lg:gap-2 xl:gap-3 gap-3 w-full">
