@@ -9,6 +9,7 @@ export type ServicePrice = {
   icon: ForwardRefExoticComponent<
     Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
   >;
+  group: string;
 };
 
 export type DirectionCardProps = {
@@ -25,7 +26,9 @@ export type ImagePayload = {
 };
 
 export type Contact = {
-  icon: ReactElement;
+  icon: ForwardRefExoticComponent<
+    Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>
+  >;
   title: string;
   description: string;
   info: string | string[];

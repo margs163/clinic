@@ -21,273 +21,319 @@ import {
 } from "lucide-react";
 import { type ServicePrice } from "./types";
 
-// Extended type to include icon
+// Extended type to include icon and group
 
-const costs: ServicePrice[] = [
+export const costs: ServicePrice[] = [
   {
     title: "Adults vascular surgeon",
     cost: 7000,
     category: "consultation",
-    icon: Heart, // Vascular = blood vessels/heart related
+    icon: Heart,
+    group: "Cardiology",
   },
   {
     title: "Adults X-ray surgeon",
     cost: 7000,
     category: "consultation",
-    icon: Scan, // X-ray/imaging related
+    icon: Scan,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Adults cardigologist",
     cost: "7000-10000",
     category: "consultation",
-    icon: Heart, // Cardiology = heart
+    icon: Heart,
+    group: "Cardiology",
   },
   {
     title: "Adults neurosurgeon",
     cost: 10000,
     category: "consultation",
-    icon: Brain, // Neurosurgery = brain/nervous system
+    icon: Brain,
+    group: "Neurology / Neurosurgery",
   },
   {
     title: "Adults urologist",
     cost: 7000,
     category: "consultation",
-    icon: Slice, // Urology = kidneys/urinary system
+    icon: Slice,
+    group: "Urology / Nephrology",
   },
   {
     title: "Adults oncologist-mammologist",
     cost: 8000,
     category: "consultation",
-    icon: ShieldCheck, // Oncology = cancer screening/protection
+    icon: ShieldCheck,
+    group: "Oncology / Mammology",
   },
   {
     title: "Adults therapist",
     cost: 7000,
     category: "consultation",
-    icon: Stethoscope, // General medical consultation
+    icon: Stethoscope,
+    group: "Therapy / General Medicine",
   },
   {
     title: "Children cardiologist",
     cost: 7000,
     category: "consultation",
-    icon: Heart, // Pediatric cardiology
+    icon: Heart,
+    group: "Cardiology",
   },
   {
     title: "Children ultracardiography",
     cost: 7000,
     category: "consultation",
-    icon: Activity, // Heart monitoring/ultrasound
+    icon: Activity,
+    group: "Cardiology",
   },
   {
     title: "Children neurologist",
     cost: 7000,
     category: "consultation",
-    icon: Brain, // Pediatric neurology
+    icon: Brain,
+    group: "Neurology / Neurosurgery",
   },
   {
     title: "Children pediatrist",
     cost: 7000,
     category: "consultation",
-    icon: Baby, // Pediatric care
+    icon: Baby,
+    group: "Therapy / General Medicine",
   },
   {
     title: "Children infectionist",
     cost: 7000,
     category: "consultation",
-    icon: Shield, // Infectious disease protection
+    icon: Shield,
+    group: "Infectious Diseases / Immunology",
   },
   {
     title: "Children traumotology-ortologist",
     cost: 7000,
     category: "consultation",
-    icon: Bone, // Orthopedics = bones/joints
+    icon: Bone,
+    group: "Traumatology / Orthopedics",
   },
   {
     title: "Children surgeon",
     cost: 7000,
     category: "consultation",
-    icon: Zap, // Surgery (precision/cutting)
+    icon: Zap,
+    group: "Surgery / General Surgery",
   },
   {
     title: "Children allergist",
     cost: 7000,
     category: "consultation",
-    icon: Flower2, // Allergies often related to pollen/flowers
+    icon: Flower2,
+    group: "Infectious Diseases / Immunology",
   },
   {
     title: "Children echocardiography",
     cost: 7000,
     category: "diagnosis",
-    icon: Waves, // Echo = sound waves
+    icon: Waves,
+    group: "Cardiology",
   },
   {
     title: "Children 24-hour ECG monitoring",
     cost: 8000,
     category: "diagnosis",
-    icon: Monitor, // 24-hour monitoring
+    icon: Monitor,
+    group: "Cardiology",
   },
   {
     title: "Children 24-hour arterial pressure monitoring",
     cost: 7500,
     category: "diagnosis",
-    icon: Gauge, // Pressure monitoring
+    icon: Gauge,
+    group: "Cardiology",
   },
   {
     title: "Children spirography",
     cost: 4000,
     category: "diagnosis",
-    icon: Wind, // Lung function/breathing test
+    icon: Wind,
+    group: "Pulmonology / Respiratory",
   },
   {
     title: "Children ECG",
     cost: 2000,
     category: "diagnosis",
-    icon: Activity, // Heart electrical activity
+    icon: Activity,
+    group: "Cardiology",
   },
   {
     title: "Children OBP ultrasound",
     cost: 5000,
     category: "diagnosis",
-    icon: Scan, // General ultrasound scanning
+    icon: Scan,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Children OBP with weight",
     cost: 6000,
     category: "diagnosis",
-    icon: Scan, // Ultrasound with additional measurement
+    icon: Scan,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Children kidneys ultrasound",
     cost: 4000,
     category: "diagnosis",
-    icon: Slice, // Kidney imaging
+    icon: Slice,
+    group: "Urology / Nephrology",
   },
   {
     title: "Children ultrasound of soft tissues/lymph nodes",
     cost: 4500,
     category: "diagnosis",
-    icon: Users, // Lymph nodes = immune system
+    icon: Users,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Children thyroid ultrasound",
     cost: 4000,
     category: "diagnosis",
-    icon: CircuitBoard, // Thyroid = endocrine system (complex network)
+    icon: CircuitBoard,
+    group: "Endocrinology",
   },
   {
     title: "Children ultrasound of joints",
     cost: 4500,
     category: "diagnosis",
-    icon: Bone, // Joint imaging
+    icon: Bone,
+    group: "Traumatology / Orthopedics",
   },
   {
     title: "Children gynecological ultrasound",
     cost: 3500,
     category: "diagnosis",
-    icon: Flower2, // Gynecological care
+    icon: Flower2,
+    group: "Gynecology",
   },
   {
     title: "Children neurosonography",
     cost: 4000,
     category: "diagnosis",
-    icon: Brain, // Brain ultrasound
+    icon: Brain,
+    group: "Neurology / Neurosurgery",
   },
   {
     title: "Children ultrasound of the scrotum",
     cost: 4000,
     category: "diagnosis",
-    icon: TestTube, // Urological/reproductive imaging
+    icon: TestTube,
+    group: "Urology / Nephrology",
   },
   {
     title: "Children ultrasound Doppler of renal vessels",
     cost: 6000,
     category: "diagnosis",
-    icon: Waves, // Doppler = blood flow waves
+    icon: Waves,
+    group: "Urology / Nephrology",
   },
   {
     title: "Adults ultrasound of veins",
     cost: 6000,
     category: "diagnosis",
-    icon: Heart, // Vascular imaging
+    icon: Heart,
+    group: "Cardiology",
   },
   {
     title: "Adults ultrasound of the brachiocephalic trunk",
     cost: 6000,
     category: "diagnosis",
-    icon: Heart, // Major blood vessel imaging
+    icon: Heart,
+    group: "Cardiology",
   },
   {
     title: "Adults ultrasound doppler of the renal arteries",
     cost: 6000,
     category: "diagnosis",
-    icon: Waves, // Doppler blood flow
+    icon: Waves,
+    group: "Urology / Nephrology",
   },
   {
     title: "Adults echocardiography",
     cost: 7000,
     category: "diagnosis",
-    icon: Waves, // Heart echo
+    icon: Waves,
+    group: "Cardiology",
   },
   {
     title: "Adults ultrasound of the pelvic cavities",
     cost: 4000,
     category: "diagnosis",
-    icon: Scan, // Pelvic imaging
+    icon: Scan,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Adults holter ECG monitoring",
     cost: 8500,
     category: "diagnosis",
-    icon: Monitor, // Continuous heart monitoring
+    icon: Monitor,
+    group: "Cardiology",
   },
   {
     title: "Adults 24-hour blood pressure monitoring",
     cost: 7500,
     category: "diagnosis",
-    icon: Gauge, // Blood pressure monitoring
+    icon: Gauge,
+    group: "Cardiology",
   },
   {
     title: "Adults OBP ultrasound",
     cost: 6000,
     category: "diagnosis",
-    icon: Scan, // General ultrasound
+    icon: Scan,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Aduls ultrasound of soft tissues/lymph nodes",
     cost: 5000,
     category: "diagnosis",
-    icon: Users, // Lymphatic system
+    icon: Users,
+    group: "Diagnostic Imaging",
   },
   {
     title: "Adults ultrasound of joints",
     cost: 4500,
     category: "diagnosis",
-    icon: Bone, // Joint imaging
+    icon: Bone,
+    group: "Traumatology / Orthopedics",
   },
   {
     title: "Adults thyroid ultrasound",
     cost: 4000,
     category: "diagnosis",
-    icon: CircuitBoard, // Thyroid/endocrine
+    icon: CircuitBoard,
+    group: "Endocrinology",
   },
   {
     title: "Adults ultrasound of the scrotum",
     cost: 4500,
     category: "diagnosis",
-    icon: TestTube, // Urological imaging
+    icon: TestTube,
+    group: "Urology / Nephrology",
   },
   {
     title: "Adults ultrasound of the mammary glands",
     cost: 6000,
     category: "diagnosis",
-    icon: ShieldCheck, // Breast screening/health check
+    icon: ShieldCheck,
+    group: "Oncology / Mammology",
   },
   {
     title: "Adults ultrasound Doppler of arteries",
     cost: 6000,
     category: "diagnosis",
-    icon: Waves, // Doppler blood flow
+    icon: Waves,
+    group: "Cardiology",
   },
 ];
 
-export default costs;
+export const uniqueGroups = new Set(costs.map((item) => item.group))
+  .values()
+  .toArray();
