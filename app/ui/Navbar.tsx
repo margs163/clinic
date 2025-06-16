@@ -81,7 +81,7 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-      <div className="hidden lg:flex justify-between items-center px-5 py-4 sm:px-8 sm:py-6">
+      <div className="hidden lg:flex justify-between items-center px-42 py-6">
         <div>
           <Link
             href={"/"}
@@ -90,7 +90,7 @@ export default function Navbar() {
             Levita
           </Link>
         </div>
-        <ul className="flex flex-row gap-x-10 text-[0.92rem] font-medium">
+        <ul className="flex flex-row gap-x-10 text-base font-medium text-gray-700">
           <li>
             <Link href={"#"}>Services</Link>
           </li>
