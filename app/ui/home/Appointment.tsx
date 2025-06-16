@@ -3,7 +3,6 @@ import {
   CalendarCheck,
   Compass,
   CircleUserRound,
-  Calendar,
 } from "lucide-react";
 
 export default function Appointment() {
