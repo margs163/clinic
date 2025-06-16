@@ -65,7 +65,7 @@ const testimonials: ReviewInfo[] = [
 
 export default function Reviews() {
   return (
-    <section className=" flex flex-col gap-6 p-4 py-3">
+    <section className=" flex flex-col gap-6 py-3">
       <div className="flex justify-between px-2">
         <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
           Reviews

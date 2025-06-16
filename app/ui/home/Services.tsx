@@ -157,17 +157,17 @@ import {
 
 export default function Services() {
   return (
-    <section className="px-2 flex flex-col gap-6 mb-24 sm:mb-12 lg:mb-6 py-4">
-      <div className="space-y-2 text-center">
-        <div className="flex gap-2 items-center px-2 py-1 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-2 mx-auto">
+    <section className="px-2 flex flex-col gap-6 lg:gap-16 mb-24 sm:mb-12 lg:mb-6 py-4">
+      <div className="space-y-2 lg:space-y-4 text-center">
+        <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-4 mx-auto">
           <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
             Our Expertise
           </p>
         </div>
-        <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
+        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800">
           Comprehensive Healthcare Services
         </h3>
-        <p className="text-sm font-normal text-gray-700">
+        <p className="text-sm font-normal text-gray-700 lg:text-base lg:max-w-[60%] lg:mx-auto">
           From preventive care to specialized treatments, our expert team
           provides personalized healthcare solutions for you and your family.
         </p>
@@ -180,41 +180,51 @@ export default function Services() {
         </Link> */}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-8">
         {serviceGroups.map((item, index) => {
           const Icon = item.icon;
           return (
             <div
               key={index}
-              className="space-y-6 bg-white shadow-md border border-gray-100 rounded-xl p-6 shadow-gray-200"
+              className="space-y-6 lg:space-y-8 bg-white shadow-md border border-gray-100 rounded-xl p-6 lg:p-8 shadow-gray-200"
             >
               <div className="flex flex-row gap-5 items-center justify-start">
                 <Icon
-                  className={`size-6 p-3 rounded-md ${item.color} box-content shrink-0`}
+                  className={`size-6 lg:size-7 p-3 rounded-md ${item.color} box-content shrink-0`}
                 />
                 <div className="flex flex-col justify-start items-start gap-1">
-                  <h3 className="font-semibold text-gray-800">{item.name}</h3>
+                  <h3 className="font-semibold lg:text-lg text-gray-800">
+                    {item.name}
+                  </h3>
                   <p
-                    className={`px-2 py-1 ${item.badgeColor} rounded-2xl text-[10px] max-w-max text-center`}
+                    className={`px-2 py-1 ${item.badgeColor} rounded-2xl text-[10px] lg:text-xs max-w-max text-center`}
                   >
                     {item.tag}
                   </p>
                 </div>
               </div>
-              <p className="text-gray-700 font-medium text-sm">
+              <p className="text-gray-700 font-medium text-sm lg:text-base">
                 {item.description}
               </p>
               <Link
                 href={"#"}
-                className="text-xs text-teal-600 font-medium flex item-center gap-2"
+                className="text-xs lg:text-sm text-teal-600 font-medium flex item-center gap-2"
               >
                 Learn More
-                <ArrowRight className="size-4" />
+                <ArrowRight className="size-4 lg:size-4" />
               </Link>
             </div>
           );
         })}
       </div>
+
+      <Link
+        href={"#"}
+        className="rounded-md bg-gradient-to-r from-teal-600 to-teal-500 hover:to-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-sm font-semibold text-white flex items-center gap-2 self-center"
+      >
+        View All Services
+        <ArrowRight className="size-3 text-white" />
+      </Link>
       {/* <Carousel
         opts={{
           align: "start",

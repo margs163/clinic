@@ -3,10 +3,11 @@ import family1 from "@/assets/checkup/family1.jpg";
 import family2 from "@/assets/checkup/family2.jpg";
 import person4 from "@/assets/motoPeople/person4.jpg";
 import Image from "next/image";
+import { Activity } from "lucide-react";
 
 export default function CheckUp() {
   return (
-    <section className="p-5 mx-4 lg:pr-0 xl:p-8 xl:mx-2 rounded-2xl border border-gray-200 bg-white shadow-sm mt-12 sm:mt-28 lg:mt-0 flex flex-col lg:flex-row lg:gap-6 xl:gap-14 shadow-gray-200">
+    <section className="p-5 mx-1 lg:pr-0 xl:p-8 xl:mx-2 rounded-2xl border border-gray-200 bg-white shadow-sm mt-12 sm:mt-28 lg:mt-0 flex flex-col lg:flex-row lg:gap-6 xl:gap-14 shadow-gray-200">
       <div className="h-[210px] sm:h-[280px] w-[110%] self-center relative lg:hidden">
         <div className="w-full absolute -top-32 flex flex-col gap-1 sm:gap-3 md:gap-5">
           <div className="flex gap-4 sm:gap-10 justify-center">
@@ -59,6 +60,12 @@ export default function CheckUp() {
       </div>
       <div className="flex flex-col gap-8 md:gap-12 xl:gap-16 items-start sm:p-3">
         <div className="space-y-2 xl:space-y-4">
+          <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-4">
+            <Activity className=" size-4 text-teal-500" />
+            <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
+              Check-Up Importance
+            </p>
+          </div>
           <h2 className="text-2xl sm:text-3xl xl:text-4xl font-extrabold text-gray-800">
             The Importance of Regular Check-Ups
           </h2>

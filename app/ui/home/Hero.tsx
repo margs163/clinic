@@ -84,10 +84,10 @@ export default function Hero() {
   }
 
   return (
-    <section className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-start sm:px-4 gap-10 lg:gap-21 sm:gap-14">
+    <section className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-start sm:px-4 gap-10 lg:gap-16 sm:gap-14">
       <div className="flex flex-col items-start justify-start gap-6 md:gap-8">
         <div className="flex flex-col gap-2 sm:gap-4">
-          <div className="flex gap-2 items-center px-2 py-1 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-2">
+          <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
             <Star className=" fill-teal-500 size-4 text-teal-500" />
             <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
               Trusted by 10,000+ patients
@@ -104,7 +104,7 @@ export default function Hero() {
             specialists. From routine check-ups to specialized treatments,
             we&apos;re here to provide the care you and your family deserve.
           </p>
-          <div className="flex gap-6 mt-4 xl:mt-6">
+          <div className="flex gap-6 mt-4 xl:mt-4">
             <div className="flex gap-2 items-center">
               <Shield className="size-5 lg:size-6 text-teal-600" />
               <p className="text-xs lg:text-sm text-gray-600">
@@ -135,7 +135,7 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="overflow-hidden relative shadow-xl rounded-lg max-w-[360px] sm:max-w-[570px] md:max-w-[650px] lg:max-w-[480px] lg:h-[360px] xl:max-w-[600px] xl:h-[420px]">
+      <div className="overflow-hidden relative shadow-xl lg:shadow-xl rounded-lg max-w-[360px] sm:max-w-[570px] md:max-w-[650px] lg:max-w-[480px] lg:h-[360px] xl:max-w-[600px] xl:h-[460px]">
         <div
           className={`flex transition-transform ease-out duration-500 w-full h-full -translate-x-[${
             currentIndex * 100

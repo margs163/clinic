@@ -178,7 +178,7 @@ import { ArrowUpRight, BriefcaseBusiness, GraduationCap } from "lucide-react";
 
 export default function Specialists() {
   return (
-    <section className="px-4 flex flex-col gap-6 py-4">
+    <section className=" flex flex-col gap-6 py-4">
       <div className="flex justify-between px-2">
         <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
           Our Specialists
