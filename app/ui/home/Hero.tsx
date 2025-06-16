@@ -87,7 +87,7 @@ export default function Hero() {
     <section className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-start sm:px-4 gap-10 lg:gap-21 sm:gap-14">
       <div className="flex flex-col items-start justify-start gap-6 md:gap-8">
         <div className="flex flex-col gap-2 sm:gap-4">
-          <div className="flex gap-2 items-center px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-2">
+          <div className="flex gap-2 items-center px-2 py-1 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-2">
             <Star className=" fill-teal-500 size-4 text-teal-500" />
             <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
               Trusted by 10,000+ patients

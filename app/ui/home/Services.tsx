@@ -1,18 +1,18 @@
 import Link from "next/link";
 import React from "react";
-import adultneuro from "@/assets/services/adultNeurologist.jpg";
-import adulttherapist from "@/assets/services/adultTherapist.jpg";
-import allergist from "@/assets/services/allergist.jpg";
-import heartsurgeon from "@/assets/services/Cardeologist.jpg";
-import cardeologist from "@/assets/services/cardiologist.jpg";
-import infectionist from "@/assets/services/infectionist.jpg";
-import neurologist from "@/assets/services/neurologist.jpg";
-import neurosurgeon from "@/assets/services/neurosurgeon.jpg";
-import oncologist from "@/assets/services/oncologist.jpg";
-import pediatrist from "@/assets/services/pediatrist.jpg";
-import surgeon from "@/assets/services/surgeon.jpg";
-import traumologist from "@/assets/services/traumologist.jpg";
-import urologist from "@/assets/services/urologist.jpg";
+// import adultneuro from "@/assets/services/adultNeurologist.jpg";
+// import adulttherapist from "@/assets/services/adultTherapist.jpg";
+// import allergist from "@/assets/services/allergist.jpg";
+// import heartsurgeon from "@/assets/services/Cardeologist.jpg";
+// import cardeologist from "@/assets/services/cardiologist.jpg";
+// import infectionist from "@/assets/services/infectionist.jpg";
+// import neurologist from "@/assets/services/neurologist.jpg";
+// import neurosurgeon from "@/assets/services/neurosurgeon.jpg";
+// import oncologist from "@/assets/services/oncologist.jpg";
+// import pediatrist from "@/assets/services/pediatrist.jpg";
+// import surgeon from "@/assets/services/surgeon.jpg";
+// import traumologist from "@/assets/services/traumologist.jpg";
+// import urologist from "@/assets/services/urologist.jpg";
 // import Image from "next/image";
 
 export const serviceGroups = [

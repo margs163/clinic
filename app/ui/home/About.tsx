@@ -108,7 +108,7 @@ export default function About() {
   return (
     <section className=" sm:p-8 lg:p-10 xl:p-12 mx-2 lg:mx-0 xl:rounded-3xl flex flex-col lg:flex-row lg:items-start gap-6 sm:gap-12 lg:gap-14">
       <div className="flex flex-col md:flex gap-4 sm:gap-6 lg:gap-4 items-start xl:gap-10">
-        <div className="flex gap-2 items-center px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
+        <div className="flex gap-2 items-center px-2 py-1 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
           <TrendingUp className=" fill-teal-500 size-4 text-teal-500" />
           <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
             About Our Clinic
