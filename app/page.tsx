@@ -10,7 +10,7 @@ import About from "./ui/home/About";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-12 sm:gap-16 py-24 sm:py-32 lg:py-40 max-w-max sm:max-w-[600px] md:max-w-[680px] lg:max-w-[1000px] xl:max-w-[1300px] sm:mx-auto">
+    <main className="flex flex-col gap-12 sm:gap-16 py-24 sm:py-32 lg:py-34 max-w-max sm:max-w-[600px] md:max-w-[680px] lg:max-w-[1000px] xl:max-w-[1300px] sm:mx-auto">
       <div className="px-5">
         <Hero />
       </div>

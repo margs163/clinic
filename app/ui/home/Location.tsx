@@ -1,4 +1,4 @@
-import { CalendarCheck, MapPinHouse, PhoneCall } from "lucide-react";
+import { CalendarCheck, Mail, MapPinHouse, PhoneCall } from "lucide-react";
 import { type Contact } from "@/app/lib/types";
 const contacts: Contact[] = [
   {
@@ -25,6 +25,14 @@ const contacts: Contact[] = [
     color: "bg-orange-50 text-orange-600",
     badgeColor: "bg-orange-100 text-orange-700",
   },
+  {
+    icon: Mail,
+    title: "Email Us",
+    description: "We reply withing 2 hours",
+    info: "info@levita.clinic",
+    color: "bg-teal-50 text-teal-600",
+    badgeColor: "",
+  },
 ];
 
 export default function Location() {
@@ -45,13 +53,13 @@ export default function Location() {
           today to schedule your appointment.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 lg:items-stretch justify-center items-start gap-4 lg:gap-8 lg:w-[80%] lg:mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-4 lg:items-stretch justify-center items-start gap-4 lg:gap-6 lg:mx-auto w-full">
         {contacts.map((item, index) => {
           const Icon = item.icon;
           return (
             <div
               key={index}
-              className="flex flex-row lg:flex-col lg:items-center items-start justify-start lg:gap-2 gap-4 p-6 lg:py-8 bg-white shadow-sm rounded-xl shadow-gray-200"
+              className="flex flex-row lg:flex-col lg:items-center items-start justify-start lg:gap-2 gap-4 p-6 lg:py-10 bg-white shadow-sm rounded-xl shadow-gray-200"
             >
               <Icon
                 strokeWidth={1.6}
@@ -61,7 +69,7 @@ export default function Location() {
                 <h3 className="lg:text-lg text-base text-gray-800 font-semibold">
                   {item.title}
                 </h3>
-                {index === contacts.length - 1 ? (
+                {index === contacts.length - 2 ? (
                   <div className="text-sm">
                     <h3 className="text-gray-700 font-medium">
                       {item.info[0]}
@@ -73,7 +81,7 @@ export default function Location() {
                     {item.info}
                   </h3>
                 )}
-                {index !== contacts.length - 1 && (
+                {index !== contacts.length - 2 && (
                   <p className=" text-sm text-gray-500">{item.description}</p>
                 )}
               </div>

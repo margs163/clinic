@@ -1,9 +1,10 @@
 "use client";
-import hero1 from "@/assets/hero/hero12.jpg";
-import hero2 from "@/assets/hero/hero22.jpg";
-import hero3 from "@/assets/hero/hero32.jpg";
-import hero4 from "@/assets/hero/hero42.jpg";
-import hero5 from "@/assets/hero/hero52.jpg";
+import hero1 from "@/assets/about/2.png";
+import hero2 from "@/assets/about/3.png";
+import hero3 from "@/assets/about/4.png";
+import hero4 from "@/assets/about/5.png";
+import hero5 from "@/assets/about/6.png";
+import hero6 from "@/assets/about/7.png";
 import { type ImagePayload } from "@/app/lib/types";
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -37,6 +38,12 @@ const images: ImagePayload[] = [
   },
   {
     src: hero5,
+    title: "Health consultation",
+    description:
+      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+  },
+  {
+    src: hero6,
     title: "Health consultation",
     description:
       "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
@@ -84,7 +91,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="flex flex-col lg:flex-row lg:items-start lg:justify-start items-center justify-start sm:px-4 gap-10 lg:gap-16 sm:gap-14">
+    <section className="flex flex-col lg:flex-row lg:items-end lg:justify-start items-center justify-start sm:px-4 gap-10 lg:gap-16 sm:gap-14">
       <div className="flex flex-col items-start justify-start gap-6 md:gap-8">
         <div className="flex flex-col gap-2 sm:gap-4">
           <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
@@ -135,11 +142,10 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-      <div className="overflow-hidden relative shadow-xl lg:shadow-xl rounded-lg max-w-[360px] sm:max-w-[570px] md:max-w-[650px] lg:max-w-[480px] lg:h-[360px] xl:max-w-[600px] xl:h-[460px]">
+      <div className="overflow-hidden relative shadow-xl lg:shadow-xl rounded-lg max-w-[360px] sm:max-w-[570px] md:max-w-[650px] lg:max-w-[480px] lg:h-[360px] xl:max-w-[600px] xl:h-[420px]">
         <div
-          className={`flex transition-transform ease-out duration-500 w-full h-full -translate-x-[${
-            currentIndex * 100
-          }%]`}
+          className={`flex transition-transform ease-out duration-500 w-full h-full`}
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
@@ -148,7 +154,7 @@ export default function Hero() {
               <Image
                 key={index}
                 src={item.src}
-                className=" object-cover object-center h-full w-full shrink-0 rounded-lg pointer-events-none"
+                className=" object-cover object-bottom h-full w-full shrink-0 rounded-lg pointer-events-none"
                 alt="image"
                 priority
               />
