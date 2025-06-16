@@ -157,7 +157,7 @@ import {
 
 export default function Services() {
   return (
-    <section className="px-2 flex flex-col gap-6 lg:gap-16 mb-24 sm:mb-12 lg:mb-6 py-4">
+    <section className="px-2 flex flex-col gap-6 lg:gap-16 mb-24 sm:mb-12 lg:mb-2 py-4">
       <div className="space-y-2 lg:space-y-4 text-center">
         <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-4 mx-auto">
           <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
@@ -186,7 +186,7 @@ export default function Services() {
           return (
             <div
               key={index}
-              className="space-y-6 lg:space-y-8 bg-white shadow-md border border-gray-100 rounded-xl p-6 lg:p-8 shadow-gray-200"
+              className="space-y-6 lg:space-y-8 bg-white shadow-md hover:shadow-lg transition-shadow border border-gray-100 rounded-xl p-6 lg:p-8 shadow-gray-200"
             >
               <div className="flex flex-row gap-5 items-center justify-start">
                 <Icon
@@ -207,7 +207,7 @@ export default function Services() {
                 {item.description}
               </p>
               <Link
-                href={"#"}
+                href={"/directions"}
                 className="text-xs lg:text-sm text-teal-600 font-medium flex item-center gap-2"
               >
                 Learn More

@@ -32,6 +32,8 @@ export type Contact = {
   title: string;
   description: string;
   info: string | string[];
+  color: string;
+  badgeColor: string;
 };
 
 export type AppointmentData = {

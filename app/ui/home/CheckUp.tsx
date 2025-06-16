@@ -4,6 +4,7 @@ import family2 from "@/assets/checkup/family2.jpg";
 import person4 from "@/assets/motoPeople/person4.jpg";
 import Image from "next/image";
 import { Activity } from "lucide-react";
+import Link from "next/link";
 
 export default function CheckUp() {
   return (
@@ -76,9 +77,12 @@ export default function CheckUp() {
             your health!
           </p>
         </div>
-        <button className="rounded-md bg-teal-500 hover:bg-teal-600 px-6 py-2 text-xs sm:text-sm font-medium text-white">
-          Book an appointment
-        </button>
+        <Link
+          href={"#"}
+          className="rounded-md bg-gradient-to-r from-teal-600 to-teal-500 hover:to-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 mt-0 text-xs sm:text-sm xl:text-sm font-semibold text-white hidden lg:inline-block"
+        >
+          Book An Appointment
+        </Link>
       </div>
       <div className="min-w-[45%] xl:min-w-[46%] self-center xl:ml-auto -top-4 xl:-top-12 relative lg:inline-block hidden xl:scale-108">
         <div className="w-full absolute -top-32 flex flex-col gap-2 sm:gap-3 md:gap-5 lg:gap-3">

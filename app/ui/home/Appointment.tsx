@@ -10,12 +10,12 @@ export default function Appointment() {
   return (
     <div className="rounded-2xl xl:rounded-3xl shadow-sm border border-gray-200 p-6 sm:p-8 xl:p-12 bg-white flex flex-col justify-start items-center gap-8 lg:hidden">
       <div className="w-full xl:self-center text-center">
-        <div className="flex gap-2 items-center px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mx-auto">
+        {/* <div className="flex gap-2 items-center px-3 py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mx-auto">
           <Calendar className=" size-4 text-teal-500" />
           <p className="text-[10px] text-teal-800 font-semibold">
             Online Booking
           </p>
-        </div>
+        </div> */}
         <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-gray-800 leading-12">
           Book an{" "}
           <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">

@@ -106,7 +106,7 @@ export default function About() {
   //   }
   // }
   return (
-    <section className=" sm:p-8 lg:p-10 xl:p-10 lg:py-6 px-2 lg:mx-0 xl:rounded-3xl flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-6 sm:gap-12 lg:gap-10">
+    <section className=" sm:p-8 lg:p-10 xl:p-10 lg:py-6 px-2 lg:mx-0 xl:rounded-3xl flex flex-col lg:grid lg:grid-cols-2 lg:items-center gap-6 sm:gap-12 lg:gap-10 ">
       <div className="flex flex-col md:flex gap-4 sm:gap-6 lg:gap-4 items-start xl:gap-4">
         <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
           <TrendingUp className=" fill-teal-500 size-4 text-teal-500" />
@@ -115,13 +115,13 @@ export default function About() {
           </p>
         </div>
         <div className="space-y-2">
-          <h2 className="text-3xl sm:text-3xl xl:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl sm:text-3xl xl:text-4xl font-extrabold text-gray-800">
             Medical Clinic{" "}
             <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
               Levita
             </span>
           </h2>
-          <p className=" text-sm font-normal sm:text-sm md:text-sm lg:text-xs xl:text-base lg:font-normal xl:font-medium tracking-wide text-gray-600 leading-normal lg:max-w-[85%]">
+          <p className=" text-sm font-medium sm:text-sm md:text-sm lg:text-xs xl:text-base lg:font-normal xl:font-medium tracking-wide text-gray-600 leading-normal lg:max-w-[85%]">
             Levita Clinic - is a modern medical institution that strives to
             provide high-quality medical care and attention to its patients. Its
             goal is to offer accessible and innovative medical services,
