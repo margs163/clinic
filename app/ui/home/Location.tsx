@@ -32,7 +32,7 @@ export default function Location() {
         </p>
       </div>
       {contacts.map((item, index) => {
-        let Icon = item.icon;
+        const Icon = item.icon;
         return (
           <div
             key={index}

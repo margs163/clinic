@@ -101,8 +101,8 @@ export default function Hero() {
           </h3>
           <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg text-gray-600">
             Experience personalized healthcare with our team of expert
-            specialists. From routine check-ups to specialized treatments, we're
-            here to provide the care you and your family deserve.
+            specialists. From routine check-ups to specialized treatments,
+            we&apos;re here to provide the care you and your family deserve.
           </p>
           <div className="flex gap-6 mt-4 xl:mt-6">
             <div className="flex gap-2 items-center">

@@ -1,25 +1,25 @@
 "use client";
-import image1 from "@/assets/about/1.png";
-import image2 from "@/assets/about/2.png";
-import image3 from "@/assets/about/3.png";
-import image4 from "@/assets/about/4.png";
-import image5 from "@/assets/about/5.png";
-import image6 from "@/assets/about/6.png";
-import image7 from "@/assets/about/7.png";
+// import image1 from "@/assets/about/1.png";
+// import image2 from "@/assets/about/2.png";
+// import image3 from "@/assets/about/3.png";
+// import image4 from "@/assets/about/4.png";
+// import image5 from "@/assets/about/5.png";
+// import image6 from "@/assets/about/6.png";
+// import image7 from "@/assets/about/7.png";
 import { CircleCheckBig, Users, Calendar, TrendingUp } from "lucide-react";
 import Link from "next/link";
-import { StaticImageData } from "next/image";
+// import { StaticImageData } from "next/image";
 // import { useState, useEffect } from "react";
 
-const images: StaticImageData[] = [
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-];
+// const images: StaticImageData[] = [
+//   image1,
+//   image2,
+//   image3,
+//   image4,
+//   image5,
+//   image6,
+//   image7,
+// ];
 
 const points = [
   "State-of-the-art medical equipment",
