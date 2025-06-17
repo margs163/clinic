@@ -30,8 +30,12 @@ export default function Page() {
         return prev;
       }
       const copyGroups = prev.slice();
-      let index = copyGroups.indexOf(groupName);
-      index > -1 ? copyGroups.splice(index, 1) : copyGroups.push(groupName);
+      const index = copyGroups.indexOf(groupName);
+      if (index > -1) {
+        copyGroups.splice(index, 1);
+      } else {
+        copyGroups.push(groupName);
+      }
       return copyGroups;
     });
   };
