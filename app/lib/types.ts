@@ -49,6 +49,9 @@ export type SpecialistInfo = {
   role: string;
   exp: string;
   level: string;
+  since: number;
+  group: string;
+  description: string;
 };
 
 export type ReviewInfo = {
