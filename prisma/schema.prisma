@@ -1,0 +1,87 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Appointments {
+  id                   String   @id @default(cuid())
+  name                 String
+  phoneNumber          String
+  appointmentDate      DateTime
+  submittedAt          DateTime @default(now())
+  appointmentDirection Services @relation(fields: [serviceId], references: [id])
+  serviceId            String
+}
+
+model Services {
+  id           String          @id @default(cuid())
+  name         String
+  type         ServiceType
+  description  String          @db.Text
+  advantages   Json
+  doctors      Specialists[]
+  price        ServicePrices[]
+  group        ServicesGroup
+  reactIcon    String?
+  appointments Appointments[]
+}
+
+model Specialists {
+  id            String      @id @default(cuid())
+  imagePath     String?     @db.Text
+  name          String
+  role          String
+  services      Services[]
+  description   String      @db.Text
+  experience    Int
+  qualification String      @db.Text
+  workingSince  Int
+  languages     Languages[] @default([RUSSIAN, KAZAKH])
+}
+
+model ServicePrices {
+  id        String        @id @default(cuid())
+  title     String
+  cost      Int
+  type      ServiceType
+  group     ServicesGroup
+  service   Services      @relation(fields: [serviceId], references: [id])
+  serviceId String
+}
+
+enum ServiceType {
+  CONSULTATION
+  DIAGNOSIS
+}
+
+enum Languages {
+  RUSSIAN
+  KAZAKH
+  ENGLISH
+}
+
+enum ServicesGroup {
+  CARDIOLOGY
+  DIAGNOSTIC_IMAGING
+  NEUROLOGY_NEUROSURGERY
+  UROLOGY_NEPHROLOGY
+  ONCOLOGY_MAMMOLOGY
+  THERAPY_GENERALMEDICINE
+  INFECTIOUSDIESEASES_IMMUNOLOGY
+  TRAUMATOLOGY_ORTHOPEDICS
+  SURGERY_GENERALSURGERY
+  PULMONOLOGY_RESPIRATORY
+  ENDOCRINOLOGY
+  GYNECOLOGY
+}

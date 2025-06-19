@@ -8,7 +8,7 @@ import {
 import SearchBar from "../ui/pricing/SearchBar";
 import PricingTable from "../ui/pricing/PricingTable";
 
-export default function page() {
+export default async function page() {
   return (
     <div className="flex flex-col gap-4 py-24 md:py-28 lg:py-30 max-w-[380px] sm:max-w-[620px] md:max-w-[710px] lg:max-w-[1000px] xl:max-w-[1400px] px-4 mx-auto min-h-screen lg:px-8">
       <Breadcrumb>
