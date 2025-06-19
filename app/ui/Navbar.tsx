@@ -34,7 +34,7 @@ export default function Navbar() {
           <ul className="flex flex-col h-screen pb-5 text-base font-medium w-full">
             <li className="hover:bg-gray-50 px-5 py-3">
               <div className="flex justify-between w-full">
-                <p className="">Services</p>
+                <p className="">Услуги</p>
                 <ChevronDown
                   onClick={() => setChevronPressed((prev) => !prev)}
                   className={`${
@@ -62,20 +62,20 @@ export default function Navbar() {
               </div>
             </li>
             <li className="hover:bg-gray-50 px-5 py-3">
-              <Link href={"#"}>Pricing</Link>
+              <Link href={"#"}>Цены</Link>
             </li>
             <li className="hover:bg-gray-50 px-5 py-3">
-              <Link href={"#"}>Specialists</Link>
+              <Link href={"#"}>Специалисты</Link>
             </li>
             <li className="hover:bg-gray-50 px-5 py-3">
-              <Link href={"#"}>Blog</Link>
+              <Link href={"#"}>Лицензия</Link>
             </li>
             <li className="hover:bg-gray-50 px-5 py-3">
-              <Link href={"#"}>Licensing</Link>
+              <Link href={"#"}>О нас</Link>
             </li>
             <li className="px-4 py-3 w-full mt-6">
               <button className="px-6 py-3 rounded-lg bg-teal-500 text-white font-medium w-full hover:bg-teal-600">
-                Make an appointment
+                Записаться на приём
               </button>
             </li>
           </ul>

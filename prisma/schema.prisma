@@ -28,6 +28,7 @@ model Services {
   id           String          @id @default(cuid())
   name         String
   type         ServiceType
+  ageCategory  Age
   description  String          @db.Text
   advantages   Json
   doctors      Specialists[]
@@ -84,4 +85,9 @@ enum ServicesGroup {
   PULMONOLOGY_RESPIRATORY
   ENDOCRINOLOGY
   GYNECOLOGY
+}
+
+enum Age {
+  KIDS
+  ADULTS
 }

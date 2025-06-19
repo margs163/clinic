@@ -16,13 +16,13 @@ export default function Specialists() {
     <section className=" flex flex-col gap-6 py-4">
       <div className="flex justify-between px-2">
         <h3 className="text-2xl sm:text-3xl font-extrabold text-gray-800">
-          Our Specialists
+          Нашe команда
         </h3>
         <Link
           href={"/specialists"}
           className="text-xs sm:text-sm flex gap-1 items-center text-gray-700 hover:text-blue-800"
         >
-          More
+          Больше
           <ArrowUpRight size={12} />
         </Link>
       </div>

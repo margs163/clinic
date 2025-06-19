@@ -16,14 +16,14 @@ export default function Appointment() {
           </p>
         </div> */}
         <h3 className="text-2xl sm:text-3xl xl:text-4xl font-bold text-gray-800 leading-12">
-          Book an{" "}
+          Записаться на{" "}
           <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
-            Appointment
+            Приём
           </span>
         </h3>
         <p className="text-xs sm:text-sm xl:text-base text-gray-600 font-normal sm:font-medium">
-          Schedule your visit with our specialized doctors. Choose your
-          preferred date and time for personalized healthcare.
+          Запланируйте свой визит к нашим врачам-специалистам. Выберите
+          предпочтительную дату и время.
         </p>
       </div>
       <form className="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 sm:gap-3 lg:gap-2 xl:gap-3 gap-3 w-full">
@@ -33,7 +33,7 @@ export default function Appointment() {
             className=" text-gray-800 shrink-0 size-5.5 xl:size-6"
           />
           <input
-            placeholder="Your name"
+            placeholder="Ваше имя"
             className="focus:outline-none text-gray-700 font-medium text-xs xl:text-[0.8rem]"
             type="text"
           />
@@ -44,7 +44,7 @@ export default function Appointment() {
             className=" text-gray-800 shrink-0 size-5.5"
           />
           <input
-            placeholder="Phone number"
+            placeholder="Номер телефона"
             className="focus:outline-none text-gray-700 font-medium text-xs"
             type="tel"
           />
@@ -68,11 +68,11 @@ export default function Appointment() {
             className=" text-gray-800 shrink-0 size-5.5"
           />
           <select className="focus:outline-none text-gray-700 font-medium text-xs w-full">
-            <option className="ml-auto">Appointment direction</option>
+            <option className="ml-auto">Направление приёма</option>
           </select>
         </div>
         <button className="px-8 py-3 sm:py-2 text-white text-xs sm:text-sm lg:text-xs lg:py-3 lg:justify-self-stretch sm:justify-self-start bg-teal-500 hover:bg-teal-600 transition-colors rounded-lg self-stretch mt-2 sm:mt-4 xl:mt-0 xl:text-sm xl:font-semibold font-medium">
-          Book Appointment
+          Записаться
         </button>
       </form>
     </div>

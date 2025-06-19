@@ -14,39 +14,39 @@ import { ArrowRight, Shield, Star, Users } from "lucide-react";
 const images: ImagePayload[] = [
   {
     src: hero1,
-    title: "Health consultation",
+    title: "Медицинская консультация",
     description:
-      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+      "Получите персональную помощь, которая действительно помогает.",
   },
   {
     src: hero2,
-    title: "Health consultation",
+    title: "Медицинская консультация",
     description:
-      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+      "Получите персональную помощь, которая действительно помогает.",
   },
   {
     src: hero3,
-    title: "Health consultation",
+    title: "Медицинская консультация",
     description:
-      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+      "Получите персональную помощь, которая действительно помогает.",
   },
   {
     src: hero4,
-    title: "Health consultation",
+    title: "Медицинская консультация",
     description:
-      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+      "Получите персональную помощь, которая действительно помогает.",
   },
   {
     src: hero5,
-    title: "Health consultation",
+    title: "Медицинская консультация",
     description:
-      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+      "Получите персональную помощь, которая действительно помогает.",
   },
   {
     src: hero6,
-    title: "Health consultation",
+    title: "Медицинская консультация",
     description:
-      "It gets much better from here. Get a personal help that works and lasts - from the best specialists in Pavlodar.",
+      "Получите персональную помощь, которая действительно помогает.",
   },
 ];
 
@@ -97,31 +97,31 @@ export default function Hero() {
           <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
             <Star className=" fill-teal-500 size-4 text-teal-500" />
             <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
-              Trusted by 10,000+ patients
+              Нам доверяют более 10 000 пациентов
             </p>
           </div>
           <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-bold text-gray-800">
-            Consult your and your family&apos;s{" "}
+            Позаботьтесь о здоровье{" "}
             <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
-              health
+              своем и своей семьи
             </span>
           </h3>
           <p className="text-sm sm:text-base md:text-lg lg:text-base xl:text-lg text-gray-600">
-            Experience personalized healthcare with our team of expert
-            specialists. From routine check-ups to specialized treatments,
-            we&apos;re here to provide the care you and your family deserve.
+            Получите персонализированную медицинскую помощь от нашей команды
+            опытных специалистов. От профилактических осмотров до
+            специализированного лечения.
           </p>
-          <div className="flex gap-6 mt-4 xl:mt-4">
-            <div className="flex gap-2 items-center">
+          <div className="flex gap-0 lg:gap-6 mt-4 xl:mt-4">
+            <div className="flex gap-2 items-center justify-start">
               <Shield className="size-5 lg:size-6 text-teal-600" />
               <p className="text-xs lg:text-sm text-gray-600">
-                Licensed & Certified
+                Лицензировано и сертифицировано
               </p>
             </div>
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-2 items-center justify-start">
               <Users className="size-5 lg:size-6 text-teal-600" />
               <p className="text-xs lg:text-sm text-gray-600">
-                Expert Specialists
+                Опытные специалисты
               </p>
             </div>
           </div>
@@ -131,14 +131,14 @@ export default function Hero() {
             href={"#"}
             className="rounded-md bg-gradient-to-r from-teal-600 to-teal-500 hover:to-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-semibold text-white flex items-center gap-2"
           >
-            Book an appointment
+            Записаться на приём
             <ArrowRight className="size-3 text-white" />
           </Link>
           <Link
             href={"/pricing"}
             className="rounded-sm bg-transparent hover:border-teal-500 hover:text-teal-700 text-gray-800 border-2 border-gray-400 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-medium"
           >
-            See prices
+            Посмотреть цены
           </Link>
         </div>
       </div>
@@ -161,8 +161,8 @@ export default function Hero() {
             );
           })}
         </div>
-        <div className="pointer-events-none absolute inset-x-0 h-36 sm:h-44 bottom-0 rounded-b-lg bg-gradient-to-t from-black/80 to-transparent z-10">
-          <div className="absolute w-11/12 inset-0 flex flex-col justify-end p-4 sm:px-6 items-start z-20">
+        <div className="pointer-events-none absolute inset-x-0 h-32 sm:h-44 bottom-0 rounded-b-lg bg-gradient-to-t from-black/80 to-transparent z-10">
+          <div className="absolute w-11/12 inset-0 flex flex-col justify-end p-4 sm:px-6 items-start z-20 gap-1">
             <div className="flex flex-col gap-1">
               <h3 className="text-lg sm:text-xl text-gray-50 font-bold">
                 {images.at(currentIndex)?.title}

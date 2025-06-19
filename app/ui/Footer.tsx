@@ -11,8 +11,8 @@ export default function Footer() {
               Levita
             </h2>
             <p className="text-sm text-gray-200 font-medium tracking-wide lg:text-left lg:max-w-[70%] xl:max-w-max">
-              A diagnostic clinic that provides medical diagnostic services,
-              including imaging and analysis.
+              Диагностическая клиника, предоставляющая услуги медицинской
+              диагностики, включая визуализацию и анализ.
             </p>
           </div>
           <div className="flex gap-6 justify-center lg:justify-start text-gray-300">

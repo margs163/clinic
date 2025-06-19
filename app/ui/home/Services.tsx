@@ -17,49 +17,52 @@ import React from "react";
 
 export const serviceGroups = [
   {
-    name: "Cardiology & Vascular",
-    description: "Heart and blood vessel care, diagnostics, and consultations.",
-    tag: "Cardiac Care",
+    name: "Кардиология и сосудистая хирургия",
+    description: "Забота о сердце и сосудах, диагностика и консультации.",
+    tag: "Кардиологическая помощь",
     icon: Heart,
     color: "bg-red-50 text-red-600",
     badgeColor: "bg-red-100 text-red-700",
   },
   {
-    name: "Neurology & Neurosurgery",
-    description: "Brain and nervous system consultations and diagnostics.",
-    tag: "Neuro Care",
+    name: "Неврология и нейрохирургия",
+    description:
+      "Консультации и диагностика заболеваний мозга и нервной системы.",
+    tag: "Неврологическая помощь",
     icon: Brain,
     color: "bg-blue-50 text-blue-600",
     badgeColor: "bg-blue-100 text-blue-700",
   },
   {
-    name: "Urology & Endocrinology",
-    description: "Urinary, reproductive, and hormonal health services.",
-    tag: "Specialized Care",
+    name: "Урология и эндокринология",
+    description:
+      "Услуги по здоровью мочеполовой, репродуктивной и гормональной систем.",
+    tag: "Специализированная помощь",
     icon: Slice,
     color: "bg-green-50 text-green-600",
     badgeColor: "bg-green-100 text-green-700",
   },
   {
-    name: "General & Pediatric Medicine",
-    description: "General health, therapy, and pediatric consultations.",
-    tag: "Primary Care",
+    name: "Общая и детская терапия",
+    description: "Общее здоровье, терапия и консультации для детей.",
+    tag: "Первичная помощь",
     icon: Stethoscope,
     color: "bg-orange-50 text-orange-600",
     badgeColor: "bg-orange-100 text-orange-700",
   },
   {
-    name: "Imaging & Diagnostics",
-    description: "Ultrasound, X-ray, and other diagnostic imaging services.",
-    tag: "Diagnostics",
+    name: "Диагностика и визуализация",
+    description: "УЗИ, рентген и другие диагностические исследования.",
+    tag: "Диагностика",
     icon: Scan,
     color: "bg-purple-50 text-purple-600",
     badgeColor: "bg-purple-100 text-purple-700",
   },
   {
-    name: "Surgery & Oncology",
-    description: "Surgical, oncological, orthopedic, and gynecological care.",
-    tag: "Advanced Care",
+    name: "Хирургия и онкология",
+    description:
+      "Хирургическая, онкологическая, ортопедическая и гинекологическая помощь.",
+    tag: "Высокотехнологичная помощь",
     icon: ShieldCheck,
     color: "bg-teal-50 text-teal-600",
     badgeColor: "bg-teal-100 text-teal-700",
@@ -161,15 +164,15 @@ export default function Services() {
       <div className="space-y-2 lg:space-y-4 text-center">
         <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max mb-4 mx-auto">
           <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
-            Our Expertise
+            Наши услуги
           </p>
         </div>
         <h3 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-800">
-          Comprehensive Healthcare Services
+          Комплексные медицинские услуги
         </h3>
         <p className="text-sm font-normal text-gray-700 lg:text-base lg:max-w-[60%] lg:mx-auto">
-          From preventive care to specialized treatments, our expert team
-          provides personalized healthcare solutions for you and your family.
+          От профилактики до специализированного лечения — наша команда
+          экспертов подберёт индивидуальные решения для вашего здоровья.
         </p>
         {/* <Link
           href={"/directions"}
@@ -210,7 +213,7 @@ export default function Services() {
                 href={"/directions"}
                 className="text-xs lg:text-sm text-teal-600 font-medium flex item-center gap-2"
               >
-                Learn More
+                Узнать Больше
                 <ArrowRight className="size-4 lg:size-4" />
               </Link>
             </div>
@@ -222,7 +225,7 @@ export default function Services() {
         href={"#"}
         className="rounded-md bg-gradient-to-r from-teal-600 to-teal-500 hover:to-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-sm font-semibold text-white flex items-center gap-2 self-center"
       >
-        View All Services
+        Все Услуги
         <ArrowRight className="size-3 text-white" />
       </Link>
       {/* <Carousel

@@ -22,50 +22,50 @@ import Link from "next/link";
 // ];
 
 const points = [
-  "State-of-the-art medical equipment",
-  "Experienced healthcare professionals",
-  "Comprehensive medical services",
-  // "Patient-centered approach",
+  "Современное медицинское оборудование",
+  "Опытные медицинские специалисты",
+  "Комплексные медицинские услуги",
 ];
 
 const achievments = [
   {
     icon: CircleCheckBig,
-    title: "Check-Ups Made",
-    stat: "10,000+",
-    description: "Comprehensive health assessments",
+    title: "Выполнено Check-Up услуг",
+    stat: "10 000+",
+    description: "Комплексные медицинские обследования",
     bg: "bg-blue-50",
     heading: "text-blue-500",
     bigHeading: "text-blue-700",
   },
   {
     icon: Users,
-    title: "Happy Clients",
-    stat: "10,000+",
-    description: "Satisfied patients and families",
+    title: "Довольных клиентов",
+    stat: "10 000+",
+    description: "Удовлетворённые пациенты и их семьи",
     bg: "bg-green-50",
     heading: "text-green-500",
     bigHeading: "text-green-700",
   },
   {
     icon: Users,
-    title: "Happy Reviews",
+    title: "Положительных отзывов",
     stat: "200+",
-    description: "Excellent patient feedback",
+    description: "Отличные отзывы пациентов",
     bg: "bg-yellow-50",
     heading: "text-yellow-500",
     bigHeading: "text-yellow-700",
   },
   {
     icon: Calendar,
-    title: "Working Since",
+    title: "Работаем с",
     stat: "2020",
-    description: "Years of trusted healthcare",
+    description: "Годы доверия и заботы о здоровье",
     bg: "bg-red-50",
     heading: "text-red-500",
     bigHeading: "text-red-700",
   },
 ];
+
 export default function About() {
   // const [currentIndex, setCurrentIndex] = useState<number>(0);
   // const [touchStartX, setTouchStartX] = useState<number | null>(null);
@@ -111,21 +111,21 @@ export default function About() {
         <div className="flex gap-2 items-center px-2 py-1 lg:px-3 lg:py-1.5 rounded-xl bg-teal-50 border border-teal-300 max-w-max">
           <TrendingUp className=" fill-teal-500 size-4 text-teal-500" />
           <p className="text-[10px] sm:text-xs text-teal-800 font-semibold">
-            About Our Clinic
+            О нашей клинике
           </p>
         </div>
         <div className="space-y-2">
           <h2 className="text-3xl sm:text-3xl xl:text-4xl font-extrabold text-gray-800">
-            Medical Clinic{" "}
+            Медицинская клиника{" "}
             <span className="bg-gradient-to-r from-teal-600 to-teal-500 bg-clip-text text-transparent">
               Levita
             </span>
           </h2>
           <p className=" text-sm font-medium sm:text-sm md:text-sm lg:text-xs xl:text-base lg:font-normal xl:font-medium tracking-wide text-gray-600 leading-normal lg:max-w-[85%]">
-            Levita Clinic - is a modern medical institution that strives to
-            provide high-quality medical care and attention to its patients. Its
-            goal is to offer accessible and innovative medical services,
-            ensuring the highest standard of care and treatment.
+            Клиника Левита - это современное медицинское учреждение, которое
+            стремится оказывать высококачественную медицинскую помощь и внимание
+            своим пациентам. Ее цель - предлагать доступные и инновационные
+            медицинские услуги, гарантируя высочайший уровень ухода и лечения.
           </p>
           <div className="space-y-3 mt-8 hidden lg:block">
             {points.map((damn, god) => (
@@ -144,7 +144,7 @@ export default function About() {
             href={"#"}
             className="rounded-md bg-gradient-to-r from-teal-600 to-teal-500 hover:to-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 mt-6 text-xs sm:text-sm xl:text-sm font-semibold text-white hidden lg:inline-block"
           >
-            Learn More
+            Узнать Больше
           </Link>
         </div>
         {/* <div className="flex gap-2 items-stretch justify-start">
@@ -209,7 +209,7 @@ export default function About() {
           href={"#"}
           className="rounded-md bg-gradient-to-r from-teal-600 to-teal-500 hover:to-teal-600 transition-colors 0 px-4 sm:px-5 sm:py-2.5 py-2 text-xs sm:text-sm xl:text-base font-semibold text-white lg:hidden"
         >
-          Learn More
+          Узнать Больше
         </Link>
       </div>
     </section>
